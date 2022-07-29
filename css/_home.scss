@@ -1,58 +1,183 @@
-#hero {
-    height: 982px;
-    width: 100%;
-    background: #E4E4DE;
-    text-align: justify;
-    position: relative;
-    .row {
-        padding-top: 190px;
+html {
+  scroll-behavior: smooth;
+}
 
-        #hero1 {
-            max-width: 696px;
-            width: 90%;
-        }
-        .text{
-            width: 255px;
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 25px;
-            line-height: 35px;
-            letter-spacing: 0.03em;
-            color: #000000;
-        }
-        a {
-            text-decoration: none;
-          }
-          
-          .-btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 216px;
-            height: 56px;
-            text-align: center;
-            border-radius: 12px;
-          }
-          
-          .-btn:hover {
-            opacity: .8;
-          }
-          
-          .-bg {
-            background: #1c449b;
-          }
-          
-          .-txt {
-            color: #fff;
-          }
-        #hero2 {
-            max-width: 50%;
-            position: absolute;
-            width: auto;
-            right: 0px;
-            margin: 0 auto;
-        }
+#hero {
+  height: 1100px;
+  width: 100%;
+  background: #E4E4DE;
+  text-align: justify;
+  position: relative;
+
+  .row {
+    padding-top: 190px;
+
+    #hero1 {
+      max-width: 696px;
+      width: 90%;
     }
 
+    .text {
+      width: 255px;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 35px;
+      letter-spacing: 0.03em;
+      color: #000000;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .-btn {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 280px;
+      height: 80px;
+      border-radius: 12px;
+      background: #CE6256;
+      border: 3px solid #8B0002;
+      border-radius: 30px;
+      margin-top: 55px;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: #FFFFFF;
+      box-shadow: 5px 5px black;
+      transition: 0.4s;
+      position: absolute;
+    }
+
+    .-btn:hover {
+      background: #8B0002;
+
+    }
+
+    #hero2 {
+      max-width: 1800px;
+      position: absolute;
+      width: 100%;
+      right: 0px;
+      margin: 0 auto;
+    }
+  }
+
+  .heromargin {
+    width: 100%;
+    margin-top: 50px;
+    position: absolute;
+  }
+}
+
+
+#whatiss {
+  background: #FDF6EC;
+
+  .whatisheader .row {
+    padding-top: 180px;
+
+    #whatishero {
+      width: 100%;
+    }
+
+    .col-7 {
+      margin-top: 180px;
+      padding-left: 60px;
+
+      .title1 {
+        font-family: 'Abril Fatface';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 61px;
+        letter-spacing: 0.03em;
+        color: #8F2031;
+      }
+
+      .title2 {
+        font-family: 'Abril Fatface';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 34px;
+        letter-spacing: 0.03em;
+        color: #CC6601;
+      }
+
+      .desc {
+        margin-top: 45px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: justify;
+        letter-spacing: 0.05em;
+        color: #000000;
+        max-width: 656px;
+        width: 100%;
+      }
+
+      .-btn {
+        margin-top: 97px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        width: 230px;
+        height: 59px;
+        border-radius: 12px;
+        background: #CE6256;
+        border: 3px solid #8B0002;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        border-radius: 30px;
+        box-shadow: 5px 5px black;
+        transition: 0.4s;
+      }
+
+      .-btn:hover {
+        background: #8B0002;
+
+      }
+    }
+  }
+
+  
+    .row.whatisfooter{
+      margin-top: 261px;
+      height:50px}
+    #left{
+      position: absolute;
+      left: 0;
+      margin-top: -160px;
+    }
+    #right{
+      position: absolute;
+      right: 0;
+      margin-top: -374px;
+    }
+  }
+
+
+#ouractivities {
+  background: #F9ECEC;
+  height: 1500px;
 }

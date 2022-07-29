@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .container,
 .container-fluid,
 .container-xxl,
@@ -4215,8 +4216,12 @@ nav.scroll {
     display: none;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 #hero {
-  height: 982px;
+  height: 1100px;
   width: 100%;
   background: #E4E4DE;
   text-align: justify;
@@ -4243,27 +4248,133 @@ nav.scroll {
   text-decoration: none;
 }
 #hero .row .-btn {
+  position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 216px;
-  height: 56px;
-  text-align: center;
+  width: 280px;
+  height: 80px;
   border-radius: 12px;
+  background: #CE6256;
+  border: 3px solid #8B0002;
+  border-radius: 30px;
+  margin-top: 55px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  box-shadow: 5px 5px black;
+  transition: 0.4s;
+  position: absolute;
 }
 #hero .row .-btn:hover {
-  opacity: 0.8;
-}
-#hero .row .-bg {
-  background: #1c449b;
-}
-#hero .row .-txt {
-  color: #fff;
+  background: #8B0002;
 }
 #hero .row #hero2 {
-  max-width: 50%;
+  max-width: 1800px;
   position: absolute;
-  width: auto;
+  width: 100%;
   right: 0px;
   margin: 0 auto;
+}
+#hero .heromargin {
+  width: 100%;
+  margin-top: 50px;
+  position: absolute;
+}
+
+#whatiss {
+  background: #FDF6EC;
+}
+#whatiss .whatisheader .row {
+  padding-top: 180px;
+}
+#whatiss .whatisheader .row #whatishero {
+  width: 100%;
+}
+#whatiss .whatisheader .row .col-7 {
+  margin-top: 180px;
+  padding-left: 60px;
+}
+#whatiss .whatisheader .row .col-7 .title1 {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 61px;
+  letter-spacing: 0.03em;
+  color: #8F2031;
+}
+#whatiss .whatisheader .row .col-7 .title2 {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 34px;
+  letter-spacing: 0.03em;
+  color: #CC6601;
+}
+#whatiss .whatisheader .row .col-7 .desc {
+  margin-top: 45px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  color: #000000;
+  max-width: 656px;
+  width: 100%;
+}
+#whatiss .whatisheader .row .col-7 .-btn {
+  margin-top: 97px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 230px;
+  height: 59px;
+  border-radius: 12px;
+  background: #CE6256;
+  border: 3px solid #8B0002;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 5px 5px black;
+  transition: 0.4s;
+}
+#whatiss .whatisheader .row .col-7 .-btn:hover {
+  background: #8B0002;
+}
+#whatiss .row.whatisfooter {
+  margin-top: 261px;
+  height: 50px;
+}
+#whatiss #left {
+  position: absolute;
+  left: 0;
+  margin-top: -160px;
+}
+#whatiss #right {
+  position: absolute;
+  right: 0;
+  margin-top: -374px;
+}
+
+#ouractivities {
+  background: #F9ECEC;
+  height: 1500px;
 }/*# sourceMappingURL=style.css.map */
