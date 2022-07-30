@@ -4490,4 +4490,304 @@ html {
   height: 144px;
   background-position: center;
   margin-top: 450px;
+}
+#cipomaskot .cipomaskot {
+  position: absolute;
+  background-repeat: no-repeat;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  width: 50%;
+  margin: 0 18%;
+  padding-top: 200px;
+  z-index: 1;
+}
+#cipomaskot .decs {
+  width: 424px;
+  right: 98px;
+  top: 700;
+  position: absolute;
+  z-index: 2;
+}
+#cipomaskot .decs .title {
+  text-align: right;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 59px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+#cipomaskot .decs .body {
+  margin: 0;
+  text-align: right;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+#cipomaskot .decs .body a {
+  color: #546419;
+  text-decoration: none;
+}
+#cipomaskot .decs .body a:hover {
+  color: #EFDC70;
+}
+
+#flashfrom {
+  height: 1052px;
+  background: url("../assets/bgflashfrompast.svg");
+  position: relative;
+  /* cell number */
+}
+#flashfrom .aside {
+  position: absolute;
+  right: 0px;
+}
+#flashfrom .title {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 61px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  padding-top: 192px;
+}
+#flashfrom body {
+  font-family: sans-serif;
+  color: transparent;
+}
+#flashfrom .row {
+  margin-top: 75px;
+}
+#flashfrom .col-8 {
+  background: url("../assets/carouselbg.svg");
+  height: 524px;
+  border: 5px solid #FFFFFF;
+  border-radius: 20px;
+}
+#flashfrom .gallery {
+  text-align: left;
+  padding: 65px 62px 102px 63px;
+}
+#flashfrom .gallery-cell {
+  width: 380px;
+  height: 354px;
+  margin-right: 40px;
+  counter-increment: gallery-cell;
+}
+#flashfrom .img1 {
+  background: url("../assets/carousel/photo1.svg");
+}
+#flashfrom .imgx {
+  background: url("../assets/carousel/nonebg.svg");
+}
+#flashfrom .gallery-cell:before {
+  display: block;
+  line-height: 200px;
+  font-size: 80px;
+}
+
+#sponsorship {
+  height: 930px;
+  position: relative;
+}
+#sponsorship .title {
+  margin-top: 108px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+#sponsorship .header {
+  margin-top: 108px;
+  width: 100%;
+}
+#sponsorship .title {
+  position: absolute;
+  margin: auto;
+  padding: 15px 40px;
+  background: #EFDC70;
+  border: 3px solid #000000;
+  border-radius: 50px;
+}
+#sponsorship .slider {
+  margin-top: 249px;
+}
+#sponsorship .slider img {
+  width: 200px;
+  margin-right: 60px;
+  -webkit-animation: scroll 60s infinite;
+  animation: scroll 60s linear infinite;
+}
+#sponsorship .slider .slide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
+#sponsorship .slider .slider {
+  background-color: whitesmoke;
+  padding: 8em 2em;
+}
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translatex(-1000%);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translatex(-1000%);
+  }
+}
+#sponsorship .footer .header {
+  width: 100%;
+}
+#sponsorship .footer .header #mainlogo {
+  width: 288px;
+}
+#sponsorship .footer .decs {
+  padding-top: 50px;
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+#sponsorship .footer .social-menu ul {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+#sponsorship .footer .social-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+#sponsorship .footer .social-menu ul li .fab {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 0.3s;
+  color: #000;
+}
+#sponsorship .footer .social-menu ul li .fab:hover {
+  color: #fff;
+}
+#sponsorship .footer .social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.6s;
+  background-color: white;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+#sponsorship .footer .social-menu ul li a:hover {
+  transform: translate(0, -10%);
+}
+#sponsorship .footer .social-menu ul li:nth-child(1) a:hover {
+  background-color: #0077b5;
+}
+#sponsorship .footer .social-menu ul li:nth-child(2) a:hover {
+  background-color: #4267B2;
+}
+#sponsorship .footer .social-menu ul li:nth-child(3) a:hover {
+  background-color: #0072b1;
+}
+#sponsorship .footer .social-menu ul li:nth-child(4) a:hover {
+  background-color: #000;
+}
+#sponsorship .footer .social-menu ul li:nth-child(5) a:hover {
+  background-color: #fb3958;
+}
+#sponsorship .footer .social-menu ul li:nth-child(6) a:hover {
+  background-color: #FF0000;
+}
+#sponsorship .ornamen1 {
+  position: absolute;
+  left: -500px;
+  bottom: 0;
+  z-index: -1;
+}
+#sponsorship .ornamen2 {
+  position: absolute;
+  left: 20%;
+  bottom: -10%;
+  z-index: -1;
+}
+#sponsorship .ornamen3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css\flickity-docs.css">
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="body">
     <nav class="navbar" id="navbar">
         <div class="navbar-container container">
             <h1 class="logo"><img src="assets/mainLogo.svg"></h1>
@@ -28,6 +30,7 @@
 
         </div>
     </nav>
+
     <section id="hero">
         <div class="container">
             <div class="row flex-row-reverse">
@@ -96,16 +99,103 @@
     <section id="civixline"></section>
 
     <section id="cipomaskot">
+        <img class="cipomaskot" src="assets/maskotDesign.svg" alt="maskotCIPO">
         <div class="title">Our Mascot</div>
         <div class="leftornamen"></div>
         <div class="rightornamen"></div>
         <div class="linetengah"></div>
+        <div class="decs">
+            <div class="title">CIPO</div>
+            <div class="body">Cipo is the mascot of ITS Civil Expo, which has existed since 2011. 
+                Various philosophies adorn Cipo. Cipo's shape and color symbolize.. <span><a href="http://">(see more)</a></span></div>
+        </div>
+    </section>
+    <section id="flashfrom">
+        <div class="aside">
+            <img src="assets/rightflashfrompast.svg" alt="" srcset="">
+        </div>
+        <div class="container">
+            <div class="title">Flash from The Past</div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="gallery js-flickity container" data-flickity-options='{ "wrapAround": true }'>
+                        <div class="gallery-cell img1"></div>
+                        <div class="gallery-cell imgx"></div>
+                        <div class="gallery-cell imgx"></div>
+                        <div class="gallery-cell imgx"></div>
+                        <div class="gallery-cell imgx"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section style="padding-bottom:300px;"></section>
+    <section id="sponsorship">
+        <div class="header d-flex justify-content-center">
+            <div class="title">OUR SPONSORSHIP</div>
+        </div>
+        <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img src="assets/sponsor/ss1.svg" alt="">
+              </div>
+              <div class="slide">
+                <img src="assets/sponsor/ss2.svg" alt="">
+              </div>
+              <div class="slide">
+                <img src="assets/sponsor/ss3.svg" alt="">
+              </div>
+              <div class="slide">
+                <img src="assets/sponsor/ss4.svg" alt="">
+              </div>
+              <div class="slide">
+                <img src="assets/sponsor/ss5.svg" alt="">
+              </div>
+              <div class="slide">
+                <img src="assets/sponsor/ss6.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="footer ">
+            <div class="header d-flex justify-content-center">
+                <img id="mainlogo" src="assets/mainLogo.svg" >
+            </div>
+            <div class="decs d-flex justify-content-center">
+                Lorem Ipsum is simply dummy text <br>
+                of the printing and typesetting industry.Lorem Ipsum has been the industry's standard</div>
+            <div class="social-menu ">
+                <ul>
+                    <li><a href="#" target="blank"><i class="fab fa-twitter"></i></i></a></li>
+                    <li><a href="#" target="blank"><i class="fab fa-facebook-f"></i></i></a></li>
+                    <li><a href="#" target="blank"><i class="fab fa-linkedin-in"></i></i></a></li>
+                    <li><a href="#" target="blank"><i class="fab fa-tiktok"></i></i></a></li>
+                    <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" target="blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+          </div>
+          
+        
+        <img class="ornamen1" src="assets/ornamenfooter1.svg">
+        <img class="ornamen2" src="assets/ornamenfooter2.svg">
+        <img class="ornamen3" src="assets/ornamenfooter3.svg">
+    </section>
 
+    <a id="myBtn">Open Modal</a>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
+    </div>
+    <!-- <section style="padding-bottom:300px;"></section> -->
     <!-- js script -->
     <script src="js/script.js"></script>
+    <script src="js/flickity-docs.min.js"></script>
 </body>
 
 </html>
