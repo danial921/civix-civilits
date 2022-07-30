@@ -4376,5 +4376,118 @@ html {
 
 #ouractivities {
   background: #F9ECEC;
-  height: 1500px;
+  padding-bottom: 220px;
+}
+#ouractivities .title {
+  padding-top: 98px;
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 61px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+}
+#ouractivities .row {
+  margin-top: 98px;
+}
+#ouractivities .row .frame1,
+#ouractivities .row .frame2,
+#ouractivities .row .frame3 {
+  border: 0px solid #000000;
+  max-width: 385px;
+  width: 100%;
+  padding-top: 130%;
+  transition: 0.4s;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+}
+#ouractivities .row .frame1:hover,
+#ouractivities .row .frame2:hover,
+#ouractivities .row .frame3:hover {
+  max-width: 385px;
+  height: 510px;
+  width: 100%;
+  cursor: pointer;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+}
+#ouractivities .row .frame1 {
+  background: url("../assets/webiarIcon.svg") no-repeat;
+}
+#ouractivities .row .frame1:hover {
+  background: url("../assets/webiarIconHover.svg") no-repeat;
+}
+#ouractivities .row .frame2 {
+  background: url("../assets/competitionIcon.svg") no-repeat;
+}
+#ouractivities .row .frame2:hover {
+  background: url("../assets/competitionIconHover.svg") no-repeat;
+}
+#ouractivities .row .frame3 {
+  background: url("../assets/closingIcon.svg") no-repeat;
+}
+#ouractivities .row .frame3:hover {
+  background: url("../assets/closingIconHover.svg") no-repeat;
+}
+#ouractivities .footerimage {
+  right: 50px;
+  position: absolute;
+  width: 130px;
+}
+
+#civixline {
+  background: url("../assets/civixLineGreen.svg");
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 44px;
+  background-position: center;
+}
+
+#cipomaskot {
+  height: 1096px;
+  background: #DCF2D6;
+  position: relative;
+}
+#cipomaskot .title {
+  padding-top: 98px;
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 61px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  width: 100%;
+}
+#cipomaskot .leftornamen {
+  background: url("../assets/leftOrnamen.svg");
+  background-repeat: no-repeat;
+  padding-left: 354px;
+  padding-top: 945px;
+  position: absolute;
+  bottom: 0px;
+  background-size: cover;
+}
+#cipomaskot .rightornamen {
+  background: url("../assets/rightOrnamen.svg");
+  background-repeat: no-repeat;
+  padding-left: 356px;
+  padding-top: 935px;
+  position: absolute;
+  right: 0px;
+  bottom: 67px;
+  background-size: cover;
+}
+#cipomaskot .linetengah {
+  background: url("../assets/lineTengah.svg");
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 144px;
+  background-position: center;
+  margin-top: 450px;
 }/*# sourceMappingURL=style.css.map */
