@@ -4118,7 +4118,7 @@ nav.scroll {
 }
 
 .navbar a:hover {
-  color: #117964;
+  color: rgb(206, 66, 10);
 }
 
 @media (max-width: 768px) {
@@ -4218,6 +4218,21 @@ nav.scroll {
 }
 html {
   scroll-behavior: smooth;
+}
+
+#goup {
+  height: 82px;
+  width: 82px;
+  position: fixed;
+  bottom: 33px;
+  right: 100px;
+  z-index: 11;
+  background: url(../assets/goup.svg) no-repeat;
+  transition: 0.4s;
+}
+
+#goup:hover {
+  background: url(../assets/goupHover.svg);
 }
 
 #hero {
@@ -4596,6 +4611,7 @@ html {
 #sponsorship {
   height: 930px;
   position: relative;
+  width: 100%;
 }
 #sponsorship .title {
   margin-top: 108px;
@@ -4733,6 +4749,7 @@ html {
   z-index: -1;
 }
 #sponsorship .ornamen2 {
+  width: 50%;
   position: absolute;
   left: 20%;
   bottom: -10%;
@@ -4747,47 +4764,310 @@ html {
 
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
+  z-index: 101;
+  padding: 0;
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  transition: 1.4s;
 }
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+.modal .col-8.isimodal {
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 50px;
+  height: 50%;
+  padding: 58px 80px;
+  margin-top: 150px;
+  transition: 1.4;
+}
+.modal .col-8.isimodal .title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 59px;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.modal .col-8.isimodal .desc {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+.modal .col-8.isimodal .desc .yellow {
+  color: #EDB52B;
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: rgb(84, 100, 25);
   float: right;
   font-size: 28px;
   font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 50%;
+  border: 3px rgb(84, 100, 25) solid;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  border: 3px #EDB52B solid;
+  color: #EDB52B;
   text-decoration: none;
   cursor: pointer;
+}
+
+#competitionhero {
+  height: 1056px;
+  background: #FDF6EC;
+  position: relative;
+}
+#competitionhero #leftfooter {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+#competitionhero #rightfooter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+#competitionhero .container {
+  position: absolute;
+  z-index: 1;
+  padding-top: 173px;
+}
+#competitionhero .container img {
+  width: 95%;
+  margin-left: 0px;
+}
+#competitionhero .container .title {
+  padding-top: 35px;
+  padding-left: 10%;
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 67px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  z-index: 10;
+}
+#competitionhero .container .body {
+  margin-top: 25px;
+  padding-left: 10%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  z-index: 10;
+}
+
+#competitionchoice {
+  background-color: #DCF2D6;
+  overflow: hidden;
+}
+#competitionchoice .col-6 {
+  height: 491px;
+  background-color: red;
+  text-align: center;
+}
+#competitionchoice .col-6.cppc,
+#competitionchoice .col-6.cesc,
+#competitionchoice .col-6.gec,
+#competitionchoice .col-6.nbdc {
+  border: 2px #000000 solid;
+}
+#competitionchoice .col-6.cppc .title,
+#competitionchoice .col-6.cesc .title,
+#competitionchoice .col-6.gec .title,
+#competitionchoice .col-6.nbdc .title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-top: 50px;
+}
+#competitionchoice .col-6.cppc img,
+#competitionchoice .col-6.cesc img,
+#competitionchoice .col-6.gec img,
+#competitionchoice .col-6.nbdc img {
+  margin-top: 22px;
+  margin: 22px 25%;
+  width: 50%;
+  max-width: 300px;
+}
+#competitionchoice .col-6.cppc a,
+#competitionchoice .col-6.cesc a,
+#competitionchoice .col-6.gec a,
+#competitionchoice .col-6.nbdc a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+  text-decoration: none;
+  background: white;
+  display: inline-block;
+  padding: 12px 23px;
+  transition: 200ms;
+  border: 3px solid #000000;
+  border-radius: 35px;
+}
+#competitionchoice .col-6.cppc a:hover,
+#competitionchoice .col-6.cesc a:hover,
+#competitionchoice .col-6.gec a:hover,
+#competitionchoice .col-6.nbdc a:hover {
+  color: white;
+}
+#competitionchoice .col-6.cppc a:after,
+#competitionchoice .col-6.cesc a:after,
+#competitionchoice .col-6.gec a:after,
+#competitionchoice .col-6.nbdc a:after {
+  font-family: "FontAwesome", sans-serif;
+  font-weight: 300;
+  content: "\f061";
+  margin-left: 20px;
+  color: #000000;
+  font-size: 30px;
+  vertical-align: middle;
+  transition: color 200ms;
+}
+#competitionchoice .col-6.cppc a:hover:after,
+#competitionchoice .col-6.cesc a:hover:after,
+#competitionchoice .col-6.gec a:hover:after,
+#competitionchoice .col-6.nbdc a:hover:after {
+  color: white;
+}
+#competitionchoice .col-6.cppc {
+  background-color: #DCF2D6;
+}
+#competitionchoice .col-6.cppc a:hover {
+  background: rgb(136, 155, 133);
+}
+#competitionchoice .col-6.cesc {
+  background-color: #CACBF0;
+}
+#competitionchoice .col-6.cesc a:hover {
+  background: #9880E0;
+}
+#competitionchoice .col-6.gec {
+  background-color: #F0BCB7;
+}
+#competitionchoice .col-6.gec a:hover {
+  background: #CE6256;
+}
+#competitionchoice .col-6.nbdc {
+  background-color: #F1BF8C;
+}
+#competitionchoice .col-6.nbdc a:hover {
+  background: #F28C25;
+}
+
+#herodetailcompetition {
+  position: relative;
+  height: 1141px;
+  background: rgb(253, 246, 236);
+}
+#herodetailcompetition .title {
+  padding-top: 138px;
+}
+#herodetailcompetition a {
+  z-index: -1;
+  color: #000000;
+  text-decoration: none;
+  background: #F3CE64;
+  border: 3px solid #F28C25;
+  display: inline-block;
+  padding: 17px 21px;
+  transition: 200ms;
+  border-radius: 35px;
+}
+#herodetailcompetition a:hover {
+  background-color: #F28C25;
+}
+#herodetailcompetition a:after {
+  font-family: "FontAwesome", sans-serif;
+  font-weight: 300;
+  content: "\f060";
+  color: white;
+  font-size: 28px;
+  vertical-align: middle;
+  transition: color 200ms;
+}
+#herodetailcompetition a:hover:after {
+  color: white;
+}
+#herodetailcompetition span {
+  margin-left: 20px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+#herodetailcompetition .container .maininformation {
+  text-align: center;
+}
+#herodetailcompetition .container .maininformation img {
+  width: 70%;
+  margin-top: 35px;
+}
+#herodetailcompetition .container .maininformation .maintitle {
+  z-index: 2;
+  margin-top: 48px;
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 67px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  z-index: 2;
+}
+#herodetailcompetition .container .maininformation .desc {
+  z-index: 2;
+  margin: 25px auto 0px auto;
+  max-width: 950px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+#herodetailcompetition .left {
+  position: absolute;
+  top: 50%;
+}
+#herodetailcompetition .right {
+  position: absolute;
+  top: 158px;
+  right: 100px;
 }/*# sourceMappingURL=style.css.map */

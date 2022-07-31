@@ -11,6 +11,7 @@
 </head>
 
 <body id="body">
+    <a id="goup" href="#"></a>
     <nav class="navbar" id="navbar">
         <div class="navbar-container container">
             <h1 class="logo"><img src="assets/mainLogo.svg"></h1>
@@ -60,7 +61,8 @@
                     <div class="col-7">
                         <div class="title1">What is</div>
                         <div class="title2">CIVIL EXPO ITS 2022?</div>
-                        <div class="desc">ITS Civil Expo 2022 is a series of national and international scale events held by
+                        <div class="desc">ITS Civil Expo 2022 is a series of national and international scale events
+                            held by
                             LE-HMS FTSP ITS in the form of seminars, competitions in the field of civil engineering, and
                             student conferences which will be held from October to November 2022.</div>
                         <a href="#" class="-btn">
@@ -81,20 +83,20 @@
     </section>
     <section id="ouractivities">
         <div class="container">
-        <div class="title">Our Activities</div>
-        <div class="row">
-            <div class="col-4" >
-                <button class="frame1" onclick="window.location.href='https://www.google.com/';"></button>
-            </div>
-            <div class="col-4" style="padding-right:0px;">
-                <button class="frame2" onclick="window.location.href='https://www.google.com/';"></button>
-            </div>
-            <div class="col-4" >
-                <button class="frame3" onclick="window.location.href='https://www.google.com/';"></button>
+            <div class="title">Our Activities</div>
+            <div class="row">
+                <div class="col-4">
+                    <button class="frame1" onclick="window.location.href='https://www.google.com/';"></button>
+                </div>
+                <div class="col-4" style="padding-right:0px;">
+                    <button class="frame2" onclick="window.location.href='https://www.google.com/';"></button>
+                </div>
+                <div class="col-4">
+                    <button class="frame3" onclick="window.location.href='https://www.google.com/';"></button>
+                </div>
             </div>
         </div>
-    </div>
-    <img class="footerimage" src="assets/headsetIcon.svg" alt="" srcset="">
+        <img class="footerimage" src="assets/headsetIcon.svg" alt="" srcset="">
     </section>
     <section id="civixline"></section>
 
@@ -106,8 +108,9 @@
         <div class="linetengah"></div>
         <div class="decs">
             <div class="title">CIPO</div>
-            <div class="body">Cipo is the mascot of ITS Civil Expo, which has existed since 2011. 
-                Various philosophies adorn Cipo. Cipo's shape and color symbolize.. <span><a href="http://">(see more)</a></span></div>
+            <div class="body">Cipo is the mascot of ITS Civil Expo, which has existed since 2011.
+                Various philosophies adorn Cipo. Cipo's shape and color symbolize.. <span><a id="myBtn">(see
+                        more)</a></span></div>
         </div>
     </section>
     <section id="flashfrom">
@@ -136,29 +139,29 @@
         </div>
         <div class="slider">
             <div class="slide-track">
-              <div class="slide">
-                <img src="assets/sponsor/ss1.svg" alt="">
-              </div>
-              <div class="slide">
-                <img src="assets/sponsor/ss2.svg" alt="">
-              </div>
-              <div class="slide">
-                <img src="assets/sponsor/ss3.svg" alt="">
-              </div>
-              <div class="slide">
-                <img src="assets/sponsor/ss4.svg" alt="">
-              </div>
-              <div class="slide">
-                <img src="assets/sponsor/ss5.svg" alt="">
-              </div>
-              <div class="slide">
-                <img src="assets/sponsor/ss6.svg" alt="">
-              </div>
+                <div class="slide">
+                    <img src="assets/sponsor/ss1.svg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/sponsor/ss2.svg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/sponsor/ss3.svg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/sponsor/ss4.svg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/sponsor/ss5.svg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/sponsor/ss6.svg" alt="">
+                </div>
             </div>
-          </div>
-          <div class="footer ">
+        </div>
+        <div class="footer ">
             <div class="header d-flex justify-content-center">
-                <img id="mainlogo" src="assets/mainLogo.svg" >
+                <img id="mainlogo" src="assets/mainLogo.svg">
             </div>
             <div class="decs d-flex justify-content-center">
                 Lorem Ipsum is simply dummy text <br>
@@ -173,23 +176,40 @@
                     <li><a href="#" target="blank"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
-          </div>
-          
-        
+        </div>
+
+
         <img class="ornamen1" src="assets/ornamenfooter1.svg">
         <img class="ornamen2" src="assets/ornamenfooter2.svg">
         <img class="ornamen3" src="assets/ornamenfooter3.svg">
     </section>
 
-    <a id="myBtn">Open Modal</a>
-
+    <!-- <a id="myBtn">Open Modal</a> -->
+    <!-- style="display: block;" -->
     <div id="myModal" class="modal">
-
         <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+        <div class="mainmodal row header d-flex justify-content-center">
+            <div id="mainmodal" class="col-8 isimodal">
+                <span class="close"><i class="fas fa-times fa-2xs"></i></span>
+                <div class="title">CIPO</div><br>
+                <div class="desc">
+                    <strong><i>Cipo is the mascot</i></strong> of ITS Civil Expo, which has existed since 2011. Various
+                    philosophies adorn
+                    Cipo. Cipo's <span class="yellow"><i>shape and color</i></span> symbolize the concrete material,
+                    which means that civil engineering
+                    students have a strong mentality in dealing with pressure like concrete resistant to
+                    compression. <br><br>
+                    Cipo is also characterized as <span class="yellow"><i>wearing a project helmet</i></span> PPE as a
+                    characteristic of civil
+                    engineering later when working in the field, while the yellow hue on the helmet indicates the
+                    primary color of the ITS HMS flag as a reference for the movement of the ITS Civil Expo .
+                </div>
+            </div>
         </div>
+        <!-- <div class="modal-content">
+            
+            <p>Some text in the Modal..</p>
+        </div> -->
 
     </div>
     <!-- <section style="padding-bottom:300px;"></section> -->

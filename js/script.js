@@ -43,6 +43,7 @@ window.onscroll = () => {
 
  // Get the modal
  var modal = document.getElementById("myModal");
+ var mainmodal = document.getElementById("mainmodal");
  var body = document.getElementById("body");
 
  // Get the button that opens the modal

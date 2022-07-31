@@ -1,0 +1,162 @@
+#competitionhero {
+    height: 1056px;
+    background: #FDF6EC;
+    position: relative;
+
+    #leftfooter {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    #rightfooter {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    .container {
+        position: absolute;
+        z-index: 1;
+        padding-top: 173px;
+
+        img {
+            width: 95%;
+            margin-left: 0px;
+        }
+
+        .title {
+            padding-top: 35px;
+            padding-left: 10%;
+            font-family: 'Abril Fatface';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 67px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #000000;
+            z-index: 10;
+        }
+
+        .body {
+            margin-top: 25px;
+            padding-left: 10%;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 29px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #000000;
+            z-index: 10;
+        }
+    }
+}
+
+#competitionchoice {
+    background-color: #DCF2D6;
+    overflow: hidden;
+
+    .col-6 {
+        // width: 99%;
+        height: 491px;
+        background-color: red;
+        text-align: center;
+    }
+
+    .col-6.cppc,
+    .col-6.cesc,
+    .col-6.gec,
+    .col-6.nbdc {
+        border: 2px #000000 solid;
+
+        .title {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 35px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #000000;
+            margin-top: 50px;
+        }
+
+        img {
+            margin-top: 22px;
+            margin: 22px 25%;
+            width: 50%;
+            max-width: 300px;
+        }
+
+        a {
+
+
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 29px;
+
+            color: #000000;
+            text-decoration: none;
+            background: white;
+            display: inline-block;
+            padding: 12px 23px;
+            transition: 200ms;
+            border: 3px solid #000000;
+            border-radius: 35px;
+        }
+
+        a:hover {
+            
+            color: white;
+        }
+
+        a:after {
+            font-family: 'FontAwesome', sans-serif;
+            font-weight: 300;
+            content: "\f061";
+            margin-left: 20px;
+            color: #000000;
+            font-size: 30px;
+            vertical-align: middle;
+            transition: color 200ms;
+        }
+
+        a:hover:after {
+            color: white;
+        }
+
+    }
+    .col-6.cppc{
+        background-color: #DCF2D6;
+        a:hover{
+            background: rgba(136, 155, 133, 1);
+        }
+    }
+
+    .col-6.cesc{
+        background-color: #CACBF0;
+        a:hover{
+            background: #9880E0;
+        }
+    }
+    .col-6.gec{
+        background-color: #F0BCB7;
+        a:hover{
+            background: #CE6256;
+        }
+    }
+    .col-6.nbdc{
+        background-color: #F1BF8C;
+        a:hover{
+            background: #F28C25;
+        }
+    }
+
+}

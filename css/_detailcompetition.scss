@@ -1,0 +1,91 @@
+#herodetailcompetition{
+    position: relative;
+    .title{
+        padding-top: 138px;
+    }
+    height: 1141px;
+    background: rgba(253, 246, 236, 1);
+    a {
+        z-index: -1;
+        color: #000000;
+        text-decoration: none;
+        background: #F3CE64;
+        border: 3px solid #F28C25;
+        display: inline-block;
+        padding: 17px 21px;
+        transition: 200ms;
+        border-radius: 35px;
+    }
+
+    a:hover {
+        background-color: #F28C25;
+    }
+    a:after {
+        font-family: 'FontAwesome', sans-serif;
+        font-weight: 300;
+        content: "\f060";
+        color: white;
+        font-size: 28px;
+        vertical-align: middle;
+        transition: color 200ms;
+    }
+
+    a:hover:after {
+        color: white;
+    }
+    span{
+        margin-left: 20px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+    .container
+    .maininformation{
+        text-align: center;
+        img{
+            width: 70%;
+            margin-top: 35px;
+            
+        }
+        .maintitle{
+            z-index: 2;
+            margin-top: 48px;
+            font-family: 'Abril Fatface';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 67px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #000000;
+            z-index: 2;
+        }
+        .desc{
+            z-index: 2;
+            margin: 25px auto 0px auto;
+            max-width: 950px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 30px;
+            letter-spacing: 0.03em;
+            color: #000000;
+
+        }
+    }
+    .left{
+        position: absolute;
+        top: 50%;
+    }
+    .right{
+        position: absolute;
+        top: 158px;
+        right: 100px;
+        
+    }
+}
