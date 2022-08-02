@@ -1,0 +1,335 @@
+#cpcc {
+    .header {
+        margin-top: 0;
+        padding-top: 0;
+        height: 190.5px;
+        z-index: 100;
+    }
+
+    .cpcc {
+        background: url("../assets/competition/detailcompfooter.svg");
+    }
+
+    // padding-top: 130px;
+    background-color: #DCF2D6;
+    position: relative;
+    z-index: 0;
+
+    .timeline {
+        z-index: 1;
+        height: 1150px;
+        padding-top: 130px;
+
+        .title {
+            font-family: 'Abril Fatface';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 54px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #000000;
+            text-align: center;
+        }
+
+        .detail {
+            margin-top: 40px;
+            border: 2px solid #FFFFFF;
+
+            height: 735px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.3);
+            overflow-y: auto;
+
+        }
+
+        img {
+
+            width: 100%;
+            // overflow: visible;
+
+        }
+
+        .icon {
+            width: 100px;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .icon.cone {
+            margin-top: 10px;
+        }
+
+        .icon.shovel {
+            bottom: 0;
+            right: 10%;
+        }
+
+        .icon.ax {
+            top: 48%;
+            right: 2%;
+        }
+
+        .icon.ax1 {
+            bottom: 3%;
+            left: 10%;
+        }
+
+        .container {
+            margin-top: 40px;
+
+            // background: url("../assets/competition/blurbg.svg");
+            overflow-y: hidden;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .bg {
+            border: 3px solid #FFFFFF;
+            width: 100%;
+            border-radius: 50px;
+            left: 0;
+            top: 0;
+            height: 100%;
+            padding: 0;
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(50px);
+            position: absolute;
+            overflow: hidden;
+            z-index: -1;
+
+        }
+
+        .containerr {
+            margin: 30px 38px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            // border: 2px solid #FFFFFF;
+            height: 735px;
+            border-radius: 50px;
+            // background: transparent;
+            cursor: pointer;
+        }
+
+        .containerr::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .left1 {
+        position: absolute;
+        top: 45%;
+        left: 0px;
+        z-index: -1;
+    }
+
+    .right1 {
+        position: absolute;
+        top: 20%;
+        right: 0px;
+        z-index: -1;
+    }
+
+    .right2 {
+        position: absolute;
+        bottom: 10%;
+        right: 0px;
+        z-index: -1;
+    }
+}
+
+#poolprice {
+    padding-top: 125px;
+    text-align: center;
+    height: 1500px;
+    background: url("../assets/competition/cpcc/ornamenBG.svg"), #DCF2D6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .rightornamen {
+        position: absolute;
+        right: 0;
+    }
+
+    .leftornamen {
+        position: absolute;
+        left: 0;
+        bottom: 30%;
+    }
+
+    .title {
+        font-family: 'Abril Fatface';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 54px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+
+    .detail {
+        margin-top: 72px;
+
+        .bg {
+            position: absolute;
+            max-width: 1088;
+            width: 85%;
+            height: 620px;
+            background: linear-gradient(125.62deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.15) 100%);
+            border: 5px solid #8E94DD;
+            backdrop-filter: blur(100px);
+            border-radius: 50px;
+            z-index: 0;
+        }
+
+        .inform {
+            text-align: center;
+            padding-top: 8px;
+            z-index: 1;
+            width: 90%;
+            position: relative;
+
+            .trophy {
+                position: absolute;
+                z-index: 10;
+                bottom: -175px;
+                right: -85px;
+            }
+
+            .staricon {
+                position: absolute;
+                z-index: 10;
+                top: -92px;
+                left: -56px;
+            }
+
+            .compeicon {
+                position: absolute;
+                z-index: 10;
+                top: -48px;
+                right: 96px;
+            }
+
+            .pricing {
+                padding-top: 67px;
+                width: 85%;
+                margin: 0 auto;
+
+                .headtitle {
+                    position: absolute;
+                    padding: 10px 40px 15px 40px;
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: 0.03em;
+                    color: #000000;
+
+                    background: #EFDC70;
+                    border: 3px solid #000000;
+                    border-radius: 50px;
+                    z-index: 1;
+                    margin-top: -35px;
+                }
+            }
+
+            .body {
+                padding-top: 39px;
+                padding-bottom: 29px;
+                border: 5px solid #000000;
+                border-radius: 30px;
+                position: relative;
+                display: flex;
+                text-align: center;
+
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 23px;
+                letter-spacing: 0.03em;
+                color: #C6AF3E;
+
+                .txt {
+                    padding: 8px 25px;
+                }
+
+                .info {
+
+                    background: #FFFFFF;
+                    border: 3px solid #C6AF3E;
+                    border-radius: 30px;
+                }
+
+                .plus {
+                    padding: 8px 10px;
+                }
+
+                .plus::after {
+                    font-family: 'FontAwesome', sans-serif;
+                    content: "\2b";
+                }
+            }
+
+        }
+    }
+    .cp{
+        text-align: center;
+        margin-top: 127px;
+        .headtitle {
+            position: relative;
+            padding: 12px 25px 12px 25px;
+            width: 310px;
+            margin: auto;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 35px;
+            align-items: center;
+            // text-align: center;
+            letter-spacing: 0.03em; 
+            color: #000000;
+            background: #FFFFFF;
+            border: 3px solid #000000;
+            border-radius: 30px;
+        }
+        .card{
+            padding: auto;
+            background: #FDF6EC;
+            border: 3px solid #FFFFFF;
+            border-radius: 50px;
+            width: 431px;
+            height: 256px;
+            margin: -35px auto auto auto;
+            // text-align: center;
+            .name{
+                margin: 70px auto 20px auto;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 26px;
+                letter-spacing: 0.03em;
+                color: #000000;
+            }
+            .line,
+            .whatsapp{
+                margin-top: 10px;
+                margin-left: 35px;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.03em;
+                color: #000000;
+            }
+        }
+    }
+}

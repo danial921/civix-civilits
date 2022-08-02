@@ -4609,12 +4609,14 @@ html {
 }
 
 #sponsorship {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 9.65%);
+  top: -200px;
   height: 930px;
   position: relative;
   width: 100%;
+  padding-top: 10px;
 }
 #sponsorship .title {
-  margin-top: 108px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -4671,11 +4673,15 @@ html {
     transform: translatex(-1000%);
   }
 }
+#sponsorship .footer {
+  text-align: center;
+}
 #sponsorship .footer .header {
   width: 100%;
 }
 #sponsorship .footer .header #mainlogo {
   width: 288px;
+  z-index: 3;
 }
 #sponsorship .footer .decs {
   padding-top: 50px;
@@ -4687,30 +4693,37 @@ html {
   text-align: center;
   letter-spacing: 0.03em;
   color: #000000;
+  background-color: transparent;
+  z-index: 3;
 }
-#sponsorship .footer .social-menu ul {
+#sponsorship .social-menu {
+  position: relative;
+}
+#sponsorship .social-menu ul {
   position: absolute;
   padding: 0;
   margin: 0;
   bottom: 0;
+  top: 20px;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
+  z-index: 2;
 }
-#sponsorship .footer .social-menu ul li {
+#sponsorship .social-menu ul li {
   list-style: none;
   margin: 0 15px;
 }
-#sponsorship .footer .social-menu ul li .fab {
+#sponsorship .social-menu ul li .fab {
   font-size: 30px;
   line-height: 60px;
   transition: 0.3s;
   color: #000;
 }
-#sponsorship .footer .social-menu ul li .fab:hover {
+#sponsorship .social-menu ul li .fab:hover {
   color: #fff;
 }
-#sponsorship .footer .social-menu ul li a {
+#sponsorship .social-menu ul li a {
   position: relative;
   display: block;
   width: 60px;
@@ -4721,45 +4734,45 @@ html {
   background-color: white;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
 }
-#sponsorship .footer .social-menu ul li a:hover {
+#sponsorship .social-menu ul li a:hover {
   transform: translate(0, -10%);
 }
-#sponsorship .footer .social-menu ul li:nth-child(1) a:hover {
+#sponsorship .social-menu ul li:nth-child(1) a:hover {
   background-color: #0077b5;
 }
-#sponsorship .footer .social-menu ul li:nth-child(2) a:hover {
+#sponsorship .social-menu ul li:nth-child(2) a:hover {
   background-color: #4267B2;
 }
-#sponsorship .footer .social-menu ul li:nth-child(3) a:hover {
+#sponsorship .social-menu ul li:nth-child(3) a:hover {
   background-color: #0072b1;
 }
-#sponsorship .footer .social-menu ul li:nth-child(4) a:hover {
+#sponsorship .social-menu ul li:nth-child(4) a:hover {
   background-color: #000;
 }
-#sponsorship .footer .social-menu ul li:nth-child(5) a:hover {
+#sponsorship .social-menu ul li:nth-child(5) a:hover {
   background-color: #fb3958;
 }
-#sponsorship .footer .social-menu ul li:nth-child(6) a:hover {
+#sponsorship .social-menu ul li:nth-child(6) a:hover {
   background-color: #FF0000;
 }
 #sponsorship .ornamen1 {
   position: absolute;
   left: -500px;
-  bottom: 0;
-  z-index: -1;
+  bottom: -300px;
+  z-index: 1;
 }
 #sponsorship .ornamen2 {
   width: 50%;
   position: absolute;
-  left: 20%;
-  bottom: -10%;
-  z-index: -1;
+  left: 25%;
+  bottom: -50%;
+  z-index: 1;
 }
 #sponsorship .ornamen3 {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
+  right: 0px;
+  bottom: -300px;
+  z-index: 1;
 }
 
 .modal {
@@ -4988,14 +5001,15 @@ html {
 
 #herodetailcompetition {
   position: relative;
-  height: 1141px;
+  height: 1175px;
   background: rgb(253, 246, 236);
+  z-index: 0;
 }
 #herodetailcompetition .title {
   padding-top: 138px;
 }
-#herodetailcompetition a {
-  z-index: -1;
+#herodetailcompetition a#back {
+  z-index: 4;
   color: #000000;
   text-decoration: none;
   background: #F3CE64;
@@ -5005,10 +5019,10 @@ html {
   transition: 200ms;
   border-radius: 35px;
 }
-#herodetailcompetition a:hover {
+#herodetailcompetition a#back:hover {
   background-color: #F28C25;
 }
-#herodetailcompetition a:after {
+#herodetailcompetition a#back:after {
   font-family: "FontAwesome", sans-serif;
   font-weight: 300;
   content: "\f060";
@@ -5017,7 +5031,7 @@ html {
   vertical-align: middle;
   transition: color 200ms;
 }
-#herodetailcompetition a:hover:after {
+#herodetailcompetition a#back:hover:after {
   color: white;
 }
 #herodetailcompetition span {
@@ -5038,7 +5052,6 @@ html {
   margin-top: 35px;
 }
 #herodetailcompetition .container .maininformation .maintitle {
-  z-index: 2;
   margin-top: 48px;
   font-family: "Abril Fatface";
   font-style: normal;
@@ -5065,9 +5078,354 @@ html {
 #herodetailcompetition .left {
   position: absolute;
   top: 50%;
+  z-index: -1;
 }
 #herodetailcompetition .right {
   position: absolute;
   top: 158px;
   right: 100px;
+  z-index: -1;
+}
+#herodetailcompetition a {
+  text-decoration: none;
+}
+#herodetailcompetition .-btnregister {
+  display: flex;
+  justify-content: center;
+  width: 201px;
+  height: 64px;
+  border-radius: 12px;
+  background: #CE6256;
+  border: 3px solid #8B0002;
+  border-radius: 30px;
+  margin-top: 55px;
+  box-shadow: 5px 5px black;
+  transition: 0.4s;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+#herodetailcompetition .-btnregister:hover {
+  background: #8B0002;
+}
+#herodetailcompetition .-btnguidebook {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 64px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  border: 3px solid black;
+  border-radius: 30px;
+  margin-top: 55px;
+  box-shadow: 5px 5px black;
+  transition: 0.4s;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: black;
+}
+#herodetailcompetition .-btnguidebook:hover {
+  background: rgb(217, 217, 217);
+  color: black;
+}
+
+#cpcc {
+  background-color: #DCF2D6;
+  position: relative;
+  z-index: 0;
+}
+#cpcc .header {
+  margin-top: 0;
+  padding-top: 0;
+  height: 190.5px;
+  z-index: 100;
+}
+#cpcc .cpcc {
+  background: url("../assets/competition/detailcompfooter.svg");
+}
+#cpcc .timeline {
+  z-index: 1;
+  height: 1150px;
+  padding-top: 130px;
+}
+#cpcc .timeline .title {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-align: center;
+}
+#cpcc .timeline .detail {
+  margin-top: 40px;
+  border: 2px solid #FFFFFF;
+  height: 735px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow-y: auto;
+}
+#cpcc .timeline img {
+  width: 100%;
+}
+#cpcc .timeline .icon {
+  width: 100px;
+  position: absolute;
+  z-index: -1;
+}
+#cpcc .timeline .icon.cone {
+  margin-top: 10px;
+}
+#cpcc .timeline .icon.shovel {
+  bottom: 0;
+  right: 10%;
+}
+#cpcc .timeline .icon.ax {
+  top: 48%;
+  right: 2%;
+}
+#cpcc .timeline .icon.ax1 {
+  bottom: 3%;
+  left: 10%;
+}
+#cpcc .timeline .container {
+  margin-top: 40px;
+  overflow-y: hidden;
+  position: relative;
+  overflow-x: hidden;
+}
+#cpcc .timeline .bg {
+  border: 3px solid #FFFFFF;
+  width: 100%;
+  border-radius: 50px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+#cpcc .timeline .containerr {
+  margin: 30px 38px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 735px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#cpcc .timeline .containerr::-webkit-scrollbar {
+  display: none;
+}
+#cpcc .left1 {
+  position: absolute;
+  top: 45%;
+  left: 0px;
+  z-index: -1;
+}
+#cpcc .right1 {
+  position: absolute;
+  top: 20%;
+  right: 0px;
+  z-index: -1;
+}
+#cpcc .right2 {
+  position: absolute;
+  bottom: 10%;
+  right: 0px;
+  z-index: -1;
+}
+
+#poolprice {
+  padding-top: 125px;
+  text-align: center;
+  height: 1500px;
+  background: url("../assets/competition/cpcc/ornamenBG.svg"), #DCF2D6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#poolprice .rightornamen {
+  position: absolute;
+  right: 0;
+}
+#poolprice .leftornamen {
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+}
+#poolprice .title {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+#poolprice .detail {
+  margin-top: 72px;
+}
+#poolprice .detail .bg {
+  position: absolute;
+  max-width: 1088;
+  width: 85%;
+  height: 620px;
+  background: linear-gradient(125.62deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.15) 100%);
+  border: 5px solid #8E94DD;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+  border-radius: 50px;
+  z-index: 0;
+}
+#poolprice .detail .inform {
+  text-align: center;
+  padding-top: 8px;
+  z-index: 1;
+  width: 90%;
+  position: relative;
+}
+#poolprice .detail .inform .trophy {
+  position: absolute;
+  z-index: 10;
+  bottom: -175px;
+  right: -85px;
+}
+#poolprice .detail .inform .staricon {
+  position: absolute;
+  z-index: 10;
+  top: -92px;
+  left: -56px;
+}
+#poolprice .detail .inform .compeicon {
+  position: absolute;
+  z-index: 10;
+  top: -48px;
+  right: 96px;
+}
+#poolprice .detail .inform .pricing {
+  padding-top: 67px;
+  width: 85%;
+  margin: 0 auto;
+}
+#poolprice .detail .inform .pricing .headtitle {
+  position: absolute;
+  padding: 10px 40px 15px 40px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  background: #EFDC70;
+  border: 3px solid #000000;
+  border-radius: 50px;
+  z-index: 1;
+  margin-top: -35px;
+}
+#poolprice .detail .inform .body {
+  padding-top: 39px;
+  padding-bottom: 29px;
+  border: 5px solid #000000;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #C6AF3E;
+}
+#poolprice .detail .inform .body .txt {
+  padding: 8px 25px;
+}
+#poolprice .detail .inform .body .info {
+  background: #FFFFFF;
+  border: 3px solid #C6AF3E;
+  border-radius: 30px;
+}
+#poolprice .detail .inform .body .plus {
+  padding: 8px 10px;
+}
+#poolprice .detail .inform .body .plus::after {
+  font-family: "FontAwesome", sans-serif;
+  content: "+";
+}
+#poolprice .cp {
+  text-align: center;
+  margin-top: 127px;
+}
+#poolprice .cp .headtitle {
+  position: relative;
+  padding: 12px 25px 12px 25px;
+  width: 310px;
+  margin: auto;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  border-radius: 30px;
+}
+#poolprice .cp .card {
+  padding: auto;
+  background: #FDF6EC;
+  border: 3px solid #FFFFFF;
+  border-radius: 50px;
+  width: 431px;
+  height: 256px;
+  margin: -35px auto auto auto;
+}
+#poolprice .cp .card .name {
+  margin: 70px auto 20px auto;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+#poolprice .cp .card .line,
+#poolprice .cp .card .whatsapp {
+  margin-top: 10px;
+  margin-left: 35px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

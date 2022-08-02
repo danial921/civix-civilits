@@ -443,13 +443,15 @@ html {
 }
 
 #sponsorship {
-  // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 9.65%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 9.65%);
+  top: -200px;
   height: 930px;
   position: relative;
   width: 100%;
+  padding-top: 10px;
 
   .title {
-    margin-top: 108px;
+    // margin-top: 3px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -509,12 +511,14 @@ html {
   }
 
   .footer {
+    text-align: center;
     .header {
       width: 100%;
 
       #mainlogo {
         // margin-top: 145px;
         width: 288px;
+        z-index: 3;
       }
     }
 
@@ -528,96 +532,103 @@ html {
       text-align: center;
       letter-spacing: 0.03em;
       color: #000000;
-
+      background-color: transparent;
+      z-index: 3;
     }
+  }
+  .social-menu{
+    position: relative;
+  }
 
-    .social-menu ul {
-      position: absolute;
-      padding: 0;
-      margin: 0;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-    }
+  .social-menu ul {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    z-index: 2;
+  }
 
-    .social-menu ul li {
-      list-style: none;
-      margin: 0 15px;
-    }
+  .social-menu ul li {
+    list-style: none;
+    margin: 0 15px;
+  }
 
-    .social-menu ul li .fab {
-      font-size: 30px;
-      line-height: 60px;
-      transition: .3s;
-      color: #000;
-    }
+  .social-menu ul li .fab {
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+  }
 
-    .social-menu ul li .fab:hover {
-      color: #fff;
-    }
+  .social-menu ul li .fab:hover {
+    color: #fff;
+  }
 
-    .social-menu ul li a {
-      position: relative;
-      display: block;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      text-align: center;
-      transition: .6s;
-      background-color: white;
-      box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
-    }
+  .social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    transition: .6s;
+    background-color: white;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
 
-    .social-menu ul li a:hover {
-      transform: translate(0, -10%);
-    }
+  }
 
-    .social-menu ul li:nth-child(1) a:hover {
-      background-color: #0077b5;
-    }
+  .social-menu ul li a:hover {
+    transform: translate(0, -10%);
+  }
 
-    .social-menu ul li:nth-child(2) a:hover {
-      background-color: #4267B2;
-    }
+  .social-menu ul li:nth-child(1) a:hover {
+    background-color: #0077b5;
+  }
 
-    .social-menu ul li:nth-child(3) a:hover {
-      background-color: #0072b1;
-    }
+  .social-menu ul li:nth-child(2) a:hover {
+    background-color: #4267B2;
+  }
 
-    .social-menu ul li:nth-child(4) a:hover {
-      background-color: #000;
-    }
+  .social-menu ul li:nth-child(3) a:hover {
+    background-color: #0072b1;
+  }
 
-    .social-menu ul li:nth-child(5) a:hover {
-      background-color: #fb3958;
-    }
+  .social-menu ul li:nth-child(4) a:hover {
+    background-color: #000;
+  }
 
-    .social-menu ul li:nth-child(6) a:hover {
-      background-color: #FF0000;
-    }
+  .social-menu ul li:nth-child(5) a:hover {
+    background-color: #fb3958;
+  }
+
+  .social-menu ul li:nth-child(6) a:hover {
+    background-color: #FF0000;
   }
 
   .ornamen1 {
     position: absolute;
     left: -500px;
-    bottom: 0;
-    z-index: -1;
+    bottom: -300px;
+    z-index: 1;
   }
 
   .ornamen2 {
     width: 50%;
     position: absolute;
-    left: 20%;
-    bottom: -10%;
-    z-index: -1;
+    left: 25%;
+    bottom: -50%;
+    z-index: 1;
   }
 
   .ornamen3 {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+    right: 0px;
+    bottom: -300px;
+    z-index: 1;
   }
 }
 
