@@ -6,7 +6,9 @@
     .title {
         padding-top: 138px;
     }
-
+    .heroimage{
+        max-height: 530px;
+    }
     a#back {
         z-index: 4;
         color: #000000;
@@ -126,6 +128,7 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: #FFFFFF;
+        z-index: 10;
       }
   
       .-btnregister:hover {
@@ -133,6 +136,7 @@
       }
 
       .-btnguidebook {
+        z-index: 10;
         display: flex;
         justify-content: center;
         width: 250px;

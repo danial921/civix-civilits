@@ -1,18 +1,19 @@
-#cpcc {
+#nbdc {
     .header {
         margin-top: 0;
         padding-top: 0;
-        height: 221;
+        height: 221px;
         z-index: 100;
     }
 
-    .cpcc {
-        background: url("../assets/competition/cpcc/detailcompfooter.svg");
+    .nbdc {
+        background: url("../assets/competition/nbdc/detailcompfooter.svg");
+        background-repeat: repeat;
         background-size: cover;
     }
 
     // padding-top: 130px;
-    background-color: #DCF2D6;
+    background-color: #F1BF8C;
     position: relative;
     z-index: 0;
 
@@ -139,11 +140,11 @@
     }
 }
 
-#poolpricecpcc {
+#poolpricenbdc {
     padding-top: 125px;
     text-align: center;
-    height: 1500px;
-    background: url("../assets/competition/cpcc/ornamenBG.svg"), #DCF2D6;
+    height: 1678px;
+    background: url("../assets/competition/nbdc/ornamenBG.svg"), #F1BF8C;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -177,9 +178,9 @@
             position: absolute;
             max-width: 1088;
             width: 85%;
-            height: 620px;
+            height: 798px;
             background: linear-gradient(125.62deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.15) 100%);
-            border: 5px solid #8E94DD;
+            border: 5px solid #79BF81;
             backdrop-filter: blur(100px);
             border-radius: 50px;
             z-index: 0;
@@ -229,7 +230,7 @@
                     letter-spacing: 0.03em;
                     color: #000000;
 
-                    background: #EFDC70;
+                    background: #C8D9EB;
                     border: 3px solid #000000;
                     border-radius: 50px;
                     z-index: 1;
@@ -252,7 +253,7 @@
                 font-size: 20px;
                 line-height: 23px;
                 letter-spacing: 0.03em;
-                color: #C6AF3E;
+                color: #CE6256;
 
                 .txt {
                     padding: 8px 25px;
@@ -261,7 +262,7 @@
                 .info {
 
                     background: #FFFFFF;
-                    border: 3px solid #C6AF3E;
+                    border: 3px solid #CE6256;
                     border-radius: 30px;
                 }
 
@@ -304,7 +305,7 @@
             border: 3px solid #FFFFFF;
             border-radius: 50px;
             width: 431px;
-            height: 256px;
+            height: 290px;
             margin: -35px auto auto auto;
             // text-align: center;
             .name{
