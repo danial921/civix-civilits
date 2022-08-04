@@ -4577,15 +4577,6 @@ html {
   font-family: sans-serif;
   color: transparent;
 }
-#flashfrom .row {
-  margin-top: 75px;
-}
-#flashfrom .col-8 {
-  background: url("../assets/carouselbg.svg");
-  height: 524px;
-  border: 5px solid #FFFFFF;
-  border-radius: 20px;
-}
 #flashfrom .gallery {
   text-align: left;
   padding: 65px 62px 102px 63px;
@@ -6817,4 +6808,291 @@ html {
 }
 #catalogue .slider .slides .slide {
   height: 450px;
+}
+
+#webinarhero {
+  width: 100%;
+  overflow-x: hidden;
+}
+#webinarhero .left {
+  position: relative;
+  box-shadow: none;
+  height: 1052px;
+  margin: 0;
+}
+#webinarhero .left .bg1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/webinar/herobgframe.svg"), #FDF6EC;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#webinarhero .right {
+  position: relative;
+  height: 1052px;
+  z-index: 0;
+}
+#webinarhero .right .bg2 {
+  z-index: -1;
+  background-color: #E4EFE7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#webinarhero .right .hat {
+  position: absolute;
+  z-index: -1;
+  right: 10%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#webinarhero .right .glass {
+  position: absolute;
+  z-index: -1;
+  right: 10%;
+  top: 15%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#webinarhero .right .meteran {
+  position: absolute;
+  z-index: -1;
+  right: 10%;
+  top: 30%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#webinarhero .right img {
+  margin-top: 167px;
+  max-width: 576px;
+  margin-left: 76px;
+  width: 100%;
+}
+#webinarhero .right .title {
+  margin-top: 29px;
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 67px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-left: 76px;
+}
+#webinarhero .right .body {
+  max-width: 600px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: justify;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-left: 76px;
+  margin-top: 15px;
+}
+#webinarhero .right .btnregis {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-left: 76px;
+  margin-top: 25px;
+  padding: 12px 35px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  background: #CE6256;
+  border: 3px solid #8B0002;
+  border-radius: 30px;
+  box-shadow: 5px 5px #000000;
+  transition: 0.4s;
+}
+#webinarhero .right .btnregis:hover {
+  background: #8B0002;
+  color: #FFFFFF;
+}
+
+#breakline {
+  height: 44px;
+  padding-left: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-image: url("../assets/webinar/line.svg");
+}
+
+#speaker {
+  background: #FDF6EC;
+  height: 1350px;
+  /* cell number */
+}
+#speaker .title {
+  padding-top: 89px;
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 61px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+#speaker .flickity-button {
+  background-color: #ACC93F !important;
+  color: #FFFFFF !important;
+  border: 3px solid #889B85;
+}
+#speaker .previous {
+  left: -50px;
+}
+#speaker .next {
+  right: -50px;
+}
+#speaker .gallery {
+  text-align: left;
+  padding: 89px 65px 0 65px;
+}
+#speaker .gallery-cell {
+  width: 401.96;
+  height: 450px;
+  counter-increment: gallery-cell;
+  opacity: 50%;
+  background-size: auto;
+  margin-left: 65px;
+  margin-right: 65px;
+}
+#speaker .img1 {
+  background: url("../assets/webinar/sepaker1-ops.svg"), no-repeat;
+  transition: 0.4s;
+}
+#speaker .is-selected.img1 {
+  background: url("../assets/webinar/sepaker1.svg"), no-repeat;
+  opacity: 100% !important;
+}
+#speaker .is-selected.imgx {
+  background: url("../assets/webinar/dummyspeaker.svg");
+}
+#speaker .imgx {
+  background: url("../assets/webinar/dummyspeaker-ops.svg");
+}
+#speaker .gallery-cell:before {
+  display: block;
+  line-height: 200px;
+  font-size: 80px;
+}
+#speaker .information {
+  margin-top: 49px;
+  border: 5px solid #000000;
+  border-radius: 20px;
+  position: relative;
+}
+#speaker .information .alien1 {
+  position: absolute;
+  left: -65px;
+  top: -65px;
+  width: 97.21px;
+  height: 100px;
+}
+#speaker .information .alien2 {
+  position: absolute;
+  right: -65px;
+  top: -65px;
+  height: 100px;
+  width: 97.21px;
+}
+#speaker .information .heading {
+  margin-top: 31px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+#speaker .information .content {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-top: 7px;
+  padding-bottom: 31px;
+}
+#speaker .information .date {
+  background: url("../assets/webinar/kotakkotak.svg") #D9E2DE;
+  border-radius: 15px 0 0 15px;
+  text-align: center;
+}
+#speaker .information .time {
+  background: url("../assets/webinar/kotakkotak.svg") #EFD2E9;
+  text-align: center;
+}
+#speaker .information .location {
+  background: url("../assets/webinar/kotakkotak.svg") #F7CC7F;
+  border-radius: 0 15px 15px 0;
+  text-align: center;
+}
+#speaker .cta {
+  margin-top: 107px;
+  text-align: center;
+}
+#speaker .cta .registerbtn {
+  padding: 12px 35px;
+  background: #CE6256;
+  border: 3px solid #8B0002;
+  border-radius: 30px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.4s;
+  box-shadow: 5px 5px #000000;
+}
+#speaker .cta .registerbtn:hover {
+  background: #8B0002;
+}
+#speaker .cta .cpbtn {
+  padding: 12px 35px;
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  border-radius: 30px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-left: 50px;
+  text-decoration: none;
+  transition: 0.4s;
+  box-shadow: 5px 5px #000000;
+}
+#speaker .cta .cpbtn:hover {
+  background: #000000;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

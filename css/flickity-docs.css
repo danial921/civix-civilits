@@ -203,7 +203,7 @@ html.is-flickity-fullscreen {
   z-index: 1;
 }
 
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 
 /* argument
 ------------------------- */
@@ -1413,8 +1413,6 @@ two columns for large devices
 /* in-use-carousel
 ------------------------- */
 
-.in-use-carousel {
-}
 
 .in-use-carousel__item {
   width: 400px;
@@ -1609,8 +1607,7 @@ two columns for large devices
   font-weight: bold;
 }
 
-.site-nav__item--homepage a {
-}
+
 
 .site-nav__item a:hover {
   background: #E5A;
@@ -1855,9 +1852,7 @@ two columns for large devices
   width: 100%;
 }
 
-.event-table th,
-.event-table td {
-}
+
 
 .event-table td {
   font-size: 0.9rem;
