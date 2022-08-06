@@ -1,0 +1,382 @@
+#detailcivexhero {
+    background: linear-gradient(180deg, #F0D9DA 0%, #AEBBE3 100%);
+    // height: 1670px;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 90px;
+
+    .container {
+        position: relative;
+    }
+
+    .star {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding-left: 50%;
+    }
+
+    .rightbg {
+        position: absolute;
+        top: 15%;
+        right: 0;
+    }
+
+    .leftbg {
+        position: absolute;
+        top: 14%;
+        left: 0;
+    }
+
+    .title {
+        padding-top: 138px;
+    }
+
+    .heroimage {
+        max-height: 530px;
+    }
+
+    a#back {
+        z-index: 4;
+        color: #000000;
+        text-decoration: none;
+        background: #F3CE64;
+        border: 3px solid #F28C25;
+        display: inline-block;
+        padding: 17px 21px;
+        transition: 200ms;
+        border-radius: 35px;
+    }
+
+    a#back:hover {
+        background-color: #F28C25;
+    }
+
+    a#back:after {
+        font-family: 'FontAwesome', sans-serif;
+        font-weight: 300;
+        content: "\f060";
+        color: white;
+        font-size: 28px;
+        vertical-align: middle;
+        transition: color 200ms;
+    }
+
+    a#back:hover:after {
+        color: white;
+    }
+
+    span {
+        margin-left: 20px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+
+    .mainhero {
+        width: max-content;
+        text-align: center;
+        margin: 62px auto 0 auto;
+
+        img {
+            max-height: 200px;
+            margin-bottom: 70px;
+        }
+
+        .titlepage {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 53px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #C63633;
+            position: relative;
+
+            .hatright {
+                position: absolute;
+                top: -50%;
+                right: -50px;
+            }
+
+            .hatleft {
+                position: absolute;
+                top: -50%;
+                left: -50px;
+            }
+        }
+
+        .subtitle {
+            margin-top: 25px;
+            font-family: 'Raleway';
+            font-style: italic;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #727172;
+        }
+
+        .arrowdown {
+            margin: 117px auto 0 auto;
+        }
+    }
+
+    .detail {
+        margin-top: 132px;
+        position: relative;
+
+        .detailtitle {
+            top: -45px;
+            margin: 0 auto 0 auto;
+            left: 0;
+            right: 0;
+            position: absolute;
+            padding: 15px 40px;
+            width: max-content;
+            background: #A4B3E0;
+            border: 3px solid #000000;
+            border-radius: 50px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 47px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #000000;
+        }
+
+        .subdetail {
+            padding: 91px 41px 52px 41px;
+            background: url("../assets/detailcivex/detailbg.svg"), #ECF2F9;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50px;
+
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 40px;
+
+            text-align: justify;
+            letter-spacing: 0.03em;
+
+            color: #000000;
+        }
+    }
+
+    .leftbottom {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .rightbottom {
+        position: absolute;
+        bottom: 25%;
+        right: 0px;
+    }
+
+
+}
+
+#theme {
+
+    position: relative;
+    .themetitle {
+        padding: 15px 40px;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+        top: -38px;
+        background: #EFDC70;
+        border: 3px solid #000000;
+        border-radius: 50px;
+        width: max-content;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #000000;
+        z-index: 10;
+    }
+    z-index: 0;
+    padding-top: 123px;
+    position: relative;
+    .themeornamen{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .container{
+        padding-bottom: 175px;
+        position: relative;
+
+        .barier{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .maintitle{
+        
+        .detail{
+            margin-top: 65px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 40px;
+            letter-spacing: 0.03em;
+            color: #000000;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    background: url("../assets/detailcivex/BG2.svg"),#F9ECEC;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    label.toggle {
+        margin-top: 62px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        background: #CE6256;
+        border: 3px solid #8B0002;
+        border-radius: 30px;
+        transition: 0.4s;
+        padding: 15px 35px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        max-width: fit-content;
+        box-shadow: 5px 5px #000000;
+    }
+    label.toggle.active{
+        background: #B9B9B9;
+        border: 3px solid #000000;
+        color: #FFFFFF;
+    }
+}
+#hidedetail{
+    background: linear-gradient(180deg, #F9ECEC 42.33%, #CDD4EA 100%);
+    padding-top: 87px;
+    // z-index: -4;
+    .toggle-el {
+        position: relative;
+        .star{
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding-right: 40%;
+        }
+        .smilepeople{
+            position: absolute;
+            top: -60px;
+            width: 120px;
+            right: -60px;
+        }
+        .title{
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: -30px;
+            position: absolute;
+            padding: 15px 40px;
+            max-width: fit-content;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 47px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #000000;
+            background: #F7A491;
+            border: 3px solid #000000;
+            border-radius: 50px;
+        }
+        padding: 2rem;
+        transition: all 0.2s ease;
+        opacity: 1;
+        padding: 112px 47px 42px 47px;
+        background: url("../assets/detailcivex/BG2.svg"), #F3E9DD;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 40px;
+
+        text-align: justify;
+        letter-spacing: 0.03em;
+
+        color: #000000;
+        border-radius: 50px;
+        
+        
+        .group{
+            z-index: 0;
+        }
+
+
+    }
+    
+    input[type="checkbox"].hide-input:checked+.toggle-el {
+        // min-height: 0;
+        height: 0;
+        opacity: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        z-index: 0;
+    }
+    
+    input.hide-input {
+        position: absolute;
+        left: -999em;
+    }
+    position: relative;
+    .headset1{
+        position: absolute;
+        left: 0;
+        bottom:80px;
+        z-index:-1;
+    }
+    .headset2{
+        position: absolute;
+        right: 0;
+        bottom: 80px;
+        z-index:-1;
+    }
+    .headset1.active,
+    .headset2.active{
+        display: none;
+    }
+    z-index:-1;
+    
+}

@@ -30,34 +30,49 @@
                 <li><a href="#">Closing</a></li>
             </ul>
         </div>
+
     </nav>
 
-    <section id="webinarhero">
-        <div class="row border-0">
-            <div class="col-4 left border-0">
-                <div class="bg1"></div>
-            </div>
-            <div class="col-8 right border-0">
-                <div class="bg2">
+    <section id="closing">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="title">CLOSING</div>
+                    <div class="body">The Closing 2022 activity will hold an open conference in which it will discuss an
+                        issue related to a predetermined theme.</div>
                 </div>
-                <img class="hat" src="../assets/webinar/heat.svg" alt="">
-                <img class="glass" src="../assets/webinar/glass.svg" alt="">
-                <img class="meteran" src="../assets/webinar/meteran.svg" alt="">
-
-                <img src="../assets/webinar/hero.svg" alt="">
-                <div class="title">Civil Expo Webinar</div>
-                <div class="body">As the opening event of the entire series of Civil Expo ITS 2022 events which present
-                    an international Webinar with the theme <strong>"IKN Nusantara Smart City Concept Analysis"</strong>.</div>
-                <a href="" class="btnregis">register</a>
+                <div class="col-5">
+                    <img src="../assets/closing/dor.svg" alt="">
+                </div>
             </div>
         </div>
+        <img class="ornamen" src="../assets/closing/heroornamen.svg" alt="">
     </section>
-    <section id="breakline"></section>
-    <section id="speaker">
-        <img class="headset" src="../assets/webinar/headset.svg" alt="" srcset="">
-        <img class="scope" src="../assets/webinar/scope.svg" alt="" srcset="">
-        <img class="ex1" src="../assets/webinar/ex-1.svg" alt="">
-        <img class="ex" src="../assets/webinar/ex.svg." alt="">
+
+
+
+    <section id="closingspeaker">
+        <div class="mariginoy"></div>
+        <div class="tabs container">
+            <ul id="tabs-nav">
+                <li><a href="#tab1">Conference</a></li>
+                <li><a href="#tab2">Awarding</a></li>
+            </ul> <!-- END tabs-nav -->
+            <div id="tabs-content">
+                <div id="tab1" class="tab-content">
+                    <img src="../assets/closing/conference.svg" alt="">
+                    <div class="body">CIVIL EXPO ITS 2022 Closing activity will hold an open conference which will discuss an issue related to a predetermined theme..</div>
+                </div>
+                <div id="tab2" class="tab-content">
+                    <img src="../assets/closing/awarding.svg" alt="">
+                    <div class="body">Can’t wait and see Awarding and Closing
+                        Ceremony for CIVIL EXPO ITS 2022, presented by Civil Engineering Departement!</div>
+                </div>
+            </div> <!-- END tabs-content -->
+        </div> <!-- END tabs -->
+
+
+
         <div class="title">Meet Our Speakers</div>
         <div class="gallery js-flickity container" data-flickity-options='{ "wrapAround": true  }'>
             <div class="gallery-cell img1"></div>
@@ -68,8 +83,8 @@
         </div>
         <div class="container">
             <div class="information row">
-                <img class="alien1" src="../assets/webinar/alienleft.svg" alt="" srcset="">
-                <img class="alien2" src="../assets/webinar/alienright.svg" alt="" srcset="">
+                <img class="alien1" src="../assets/closing/eefleft.svg" alt="" srcset="">
+                <img class="alien2" src="../assets/closing/eegright.svg" alt="" srcset="">
                 <div class="col-4 date">
                     <div class="heading">DATE :</div>
                     <div class="content">October 15, 2022</div>
@@ -142,6 +157,24 @@
     <!-- <section style="height: 300px;"></section> -->
     <script src="../js/script.js"></script>
     <script src="../js/flickity-docs.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // Show the first tab and hide the rest
+        $('#tabs-nav li:first-child').addClass('active');
+        $('.tab-content').hide();
+        $('.tab-content:first').show();
+
+        // Click function
+        $('#tabs-nav li').click(function () {
+            $('#tabs-nav li').removeClass('active');
+            $(this).addClass('active');
+            $('.tab-content').hide();
+
+            var activeTab = $(this).find('a').attr('href');
+            $(activeTab).fadeIn();
+            return false;
+        });
+    </script>
 </body>
 
 </html>

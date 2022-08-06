@@ -58,8 +58,9 @@
 }
 
 #competitionchoice {
-    background-color: #DCF2D6;
+    background-color: #FDF6EC;
     overflow: hidden;
+    padding-bottom: 250px;
 
     .col-6 {
         // width: 99%;
@@ -73,7 +74,6 @@
     .col-6.gec,
     .col-6.nbdc {
         border: 2px #000000 solid;
-
         .title {
             font-family: 'Raleway';
             font-style: normal;
@@ -90,7 +90,7 @@
             margin-top: 22px;
             margin: 22px 25%;
             width: 50%;
-            max-width: 300px;
+            max-height: 260px;
         }
 
         a {

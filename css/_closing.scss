@@ -1,156 +1,71 @@
-#webinarhero {
-    width: 100%;
-    overflow-x: hidden;
+#closing {
+    background: linear-gradient(180deg, #675D79 0%, #F0BCB7 32.08%, #E7E3EE 100%);
+    height: 668px;
+    position: relative;
 
-    .left {
-        position: relative;
-        box-shadow: none;
-        height: 1052px;
-        margin: 0;
-
-        .bg1 {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: url("../assets/webinar/herobgframe.svg"), #FDF6EC;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+    .container {
+        padding-top: 140px;
     }
 
-    .right {
-        position: relative;
-        height: 1052px;
-        z-index: 0;
-
-        .bg2 {
-            z-index: -1;
-            background-color: #E4EFE7;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-        }
-
-        .hat {
-            position: absolute;
-            z-index: -1;
-            right: 10%;
-            width: fit-content;
-        }
-
-        .glass {
-            position: absolute;
-            z-index: -1;
-            right: 10%;
-            top: 15%;
-            width: fit-content;
-        }
-
-        .meteran {
-            position: absolute;
-            z-index: -1;
-            right: 10%;
-            top: 30%;
-            width: fit-content;
-        }
-
-        img {
-            margin-top: 167px;
-            max-width: 576px;
-            margin-left: 76px;
-            width: 100%;
-        }
-
-        .title {
-            margin-top: 29px;
-            font-family: 'Abril Fatface';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 50px;
-            line-height: 67px;
-            letter-spacing: 0.03em;
-            color: #000000;
-            margin-left: 76px;
-        }
-
-        .body {
-            max-width: 600px;
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 25px;
-            line-height: 35px;
-            text-align: justify;
-            letter-spacing: 0.03em;
-            color: #000000;
-            margin-left: 76px;
-            margin-top: 15px;
-        }
-
-        .btnregis {
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 30px;
-            line-height: 35px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: #FFFFFF;
-            margin-left: 76px;
-            margin-top: 25px;
-            padding: 12px 35px;
-            width: fit-content;
-            text-decoration: none;
-
-            background: #CE6256;
-            border: 3px solid #8B0002;
-            border-radius: 30px;
-            box-shadow: 5px 5px #000000;
-            transition: 0.4s;
-        }
-
-        .btnregis:hover {
-            background: #8B0002;
-            color: #FFFFFF;
-        }
-
+    .title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 113px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        text-shadow: 8px 8px #46108B;
+        padding-top: 76px;
     }
 
+    .body {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 35px;
+        letter-spacing: 0.03em;
+        color: #454444;
+        max-width: 721px;
+        margin-top: 10px;
+    }
+
+    .ornamen {
+        position: absolute;
+        bottom: 10%;
+    }
 }
 
-#breakline {
-    height: 44px;
-    padding-left: 100%;
-    width: max-content;
-    background-image: url("../assets/webinar/line.svg");
-}
-
-#speaker {
-    background: #FDF6EC;
-    height: 1350px;
+#closingspeaker {
+    
+    background: linear-gradient(180deg, #DCF2D6 23.68%, #F7F5DA 40.11%);;
+    padding-bottom: 250px;
     position: relative;
     z-index: 0;
-    .headset{
+
+    .headset {
         position: absolute;
         top: 80px;
         left: 20%;
         z-index: -1;
     }
-    .scope{
+
+    .scope {
         position: absolute;
         top: 40px;
         right: 10%;
         z-index: -1;
     }
-    .ex1{
+
+    .ex1 {
         position: absolute;
         z-index: -1;
         bottom: 10%;
         left: 20%;
     }
-    .ex{
+
+    .ex {
         position: absolute;
         z-index: -1;
         bottom: 10%;
@@ -204,7 +119,8 @@
         margin-left: 65px;
         margin-right: 65px;
     }
-    .gallery-cell.is-selected{
+
+    .gallery-cell.is-selected {
         opacity: 100%;
     }
 
@@ -298,11 +214,13 @@
             text-align: center;
         }
     }
-    .cta{
+
+    .cta {
         z-index: 2;
         margin-top: 107px;
         text-align: center;
-        .registerbtn{
+
+        .registerbtn {
             padding: 12px 35px;
             background: #CE6256;
             border: 3px solid #8B0002;
@@ -319,13 +237,14 @@
             text-decoration: none;
             transition: 0.4s;
             box-shadow: 5px 5px #000000;
-            
-        }
-        .registerbtn:hover{
-            background:#8B0002 ;
+
         }
 
-        .cpbtn{
+        .registerbtn:hover {
+            background: #8B0002;
+        }
+
+        .cpbtn {
             padding: 12px 35px;
             background: #FFFFFF;
             border: 3px solid #000000;
@@ -343,12 +262,110 @@
             text-decoration: none;
             transition: 0.4s;
             box-shadow: 5px 5px #000000;
-            
+
         }
-        .cpbtn:hover{
-            background:#000000 ;
+
+        .cpbtn:hover {
+            background: #000000;
             color: #FFFFFF;
         }
     }
 
+}
+
+#closingspeaker {
+    .mariginoy{
+        padding-top: 79px;
+    }
+    /* Tabs */
+    .tabs {
+        width: 100%;
+        border-radius: 5px;
+    }
+    #tabs-nav{
+            padding: 0px;
+            border-radius: 30px;
+            background-color: #FFFFFF;
+            width: max-content;
+            margin: 0 auto!important;
+    }
+    #tabs-nav:hover{
+        background-color: rgb(139, 0, 2,0.5);
+    }
+    ul#tabs-nav {
+        list-style: none;
+        margin: 0;
+        overflow: auto;
+    }
+
+    ul#tabs-nav li {
+        float: left;
+        font-weight: bold;
+        margin-right: 2px;
+        padding: 12px 35px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        a{
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    ul#tabs-nav li.active {
+        background: #CE6256;
+        border: 3px solid #8B0002;
+        border-radius: 30px;
+        a{
+            color: #FFFFFF!important;
+        }
+    }
+    ul#tabs-nav li:hover{
+        a{
+            color: #FFFFFF;
+        }
+    }
+
+    #tabs-nav li a {
+        text-decoration: none;
+    }
+
+    .tab-content {
+        margin-top: 22px;
+        text-align: center;
+        img{
+            max-height: 400px;
+            margin: 0 auto;
+        }
+        .body{
+            max-width: 729px;
+            margin: 45px auto 0 auto;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #000000;
+        }
+    }
+
+    /* Just for CodePen styling - don't include if you copy paste */
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        margin: 2em;
+    }
 }
