@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>competition</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="../css\flickity-docs.css">
     <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="../assets/civexico.svg">
 </head>
 
 <body id="body">
     <a id="goup" href="#"></a>
     <nav class="navbar" id="navbar">
         <div class="navbar-container container">
-            <h1 class="logo"><img src="../assets/mainLogo.svg"></h1>
+            <a href="../detailcivex/" class="logo"><img src="../assets/mainLogo.svg"></a>
             <input type="checkbox" name="" id="">
             <div class="hamburger-lines">
                 <span class="line line1"></span>
@@ -22,21 +24,22 @@
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#"><strong>Competition</strong></a></li>
-                <li><a href="#">Webinar</a></li>
-                <li><a href="#">Merchandise</a></li>
-                <li><a href="#">Closing</a></li>
+                <li><a href="../">Home</a></li>
+                <li><a href="../competition"><strong>Competition</strong></a></li>
+                <li><a href="../webinar">Webinar</a></li>
+                <li><a href="../merchandise">Merchandise</a></li>
+                <li><a href="../closing">Closing</a></li>
             </ul>
+
         </div>
     </nav>
     <section id="competitionhero">
-        <img id="leftfooter" src="../assets/competition/leftherofooter.svg" alt="">
-        <img id="rightfooter" src="../assets/competition/rightherofooter.svg" alt="">
+        <img id="leftfooter" src="../assets/competition/leftherofooter.svg" data-aos="zoom-in">
+        <img id="rightfooter" src="../assets/competition/rightherofooter.svg" data-aos="zoom-in">
         <div class="container">
         <div class="row d-flex justify-content-around">
-            <div class="col-10"><img src="../assets/competition/thropyHero.svg" alt="" srcset=""></div>
-            <div class="col-12">
+            <div class="col-12"><img src="../assets/competition/thropyHero.svg" data-aos="fade-up"></div>
+            <div class="col-12 justify-content-center" data-aos="zoom-in">
                 <div class="title">Competition</div>
                 <div class="body">Challenge your skills in Civil Expo ITS 2022<br>
                     let’s make our move!
@@ -47,29 +50,29 @@
     </section>
     <section id="competitionchoice">
         <div class="row">
-            <div class="col-6 cppc ">
+            <div class="col-6 cppc" data-aos="zoom-in-right">
                 <div class="title">Construction Project Planning Competition</div>
                 <img src="../assets/competition/CPPC.svg"  alt="cpcc" srcset="">
                 <div class="seemorre"></div>
-                <a href="#" class="">See More</a>
+                <a href="../cpcc" class="">See More</a>
             </div>
-            <div class="col-6 cesc">
+            <div class="col-6 cesc" data-aos="zoom-in-left">
                 <div class="title">Civil Engineering Student Competition</div>
                 <img src="../assets/competition/CESC.svg"  alt="cpcc" srcset="">
                 <div class="seemorre"></div>
-                <a href="#" class="">See More</a>
+                <a href="../cesc/" class="">See More</a>
             </div>
-            <div class="col-6 gec">
+            <div class="col-6 gec" data-aos="zoom-in-right">
                 <div class="title">Geotechnical Engineering Competition</div>
                 <img src="../assets/competition/GEC.svg"  alt="cpcc" srcset="">
                 <div class="seemorre"></div>
-                <a href="#" class="">See More</a>
+                <a href="../gec" class="">See More</a>
             </div>
-            <div class="col-6 nbdc">
+            <div class="col-6 nbdc" data-aos="zoom-in-left">
                 <div class="title">National Bridge Design Competition</div>
                 <img src="../assets/competition/NBDC.svg"  alt="cpcc" srcset="">
                 <div class="seemorre"></div>
-                <a href="#" class="">See More</a>
+                <a href="../nbdc" class="">See More</a>
             </div>
         </div>
     </section>
@@ -127,6 +130,12 @@
     <!-- <section style="height: 300px;"></section> -->
     <script src="../js/script.js"></script>
     <script src="../js/flickity-docs.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
 
 </html>

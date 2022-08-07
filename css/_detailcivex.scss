@@ -347,7 +347,7 @@
 
     }
     
-    input[type="checkbox"].hide-input:checked+.toggle-el {
+    input[type="checkbox"].hide-input:not(:checked)+.toggle-el {
         // min-height: 0;
         height: 0;
         opacity: 0;
@@ -363,13 +363,13 @@
     position: relative;
     .headset1{
         position: absolute;
-        left: 0;
+        left: 7%;
         bottom:80px;
         z-index:-1;
     }
     .headset2{
         position: absolute;
-        right: 0;
+        right: 7%;
         bottom: 80px;
         z-index:-1;
     }

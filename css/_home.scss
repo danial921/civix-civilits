@@ -18,14 +18,46 @@ html {
 }
 
 #hero {
-  height: 1100px;
+  // height: 1100px;
+  padding-bottom: 27%;
   width: 100%;
   background: #E4E4DE;
   text-align: justify;
   position: relative;
-
+  .homemainhero{
+    position: absolute;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    max-width: 50%;
+    right: 0;
+  }
+  .margin{
+    bottom: -350px;
+    position: absolute;
+    height: 720;
+    width: 100%;
+    z-index: 0;
+    background: url("../assets/marginmainpage.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media (max-width: 992px) {
+    .margin {
+      height: 480px;
+      bottom: -230px;
+    }
+  }
+  @media (max-width: 576px) {
+    .margin {
+      height: 200px;
+      bottom: -90px;
+    }
+  }
+  
   .row {
-    padding-top: 190px;
+    padding-top: 150px;
 
     #hero1 {
       max-width: 696px;
@@ -57,7 +89,7 @@ html {
       background: #CE6256;
       border: 3px solid #8B0002;
       border-radius: 30px;
-      margin-top: 55px;
+      margin-top: 40px;
       font-family: 'Raleway';
       font-style: normal;
       font-weight: 700;
@@ -77,9 +109,8 @@ html {
       background: #8B0002;
 
     }
-
     #hero2 {
-      max-width: 1800px;
+      max-width: 40%;
       position: absolute;
       width: 100%;
       right: 0px;

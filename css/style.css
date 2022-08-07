@@ -4236,14 +4236,45 @@ html {
 }
 
 #hero {
-  height: 1100px;
+  padding-bottom: 27%;
   width: 100%;
   background: #E4E4DE;
   text-align: justify;
   position: relative;
 }
+#hero .homemainhero {
+  position: absolute;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  max-width: 50%;
+  right: 0;
+}
+#hero .margin {
+  bottom: -350px;
+  position: absolute;
+  height: 720;
+  width: 100%;
+  z-index: 0;
+  background: url("../assets/marginmainpage.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 992px) {
+  #hero .margin {
+    height: 480px;
+    bottom: -230px;
+  }
+}
+@media (max-width: 576px) {
+  #hero .margin {
+    height: 200px;
+    bottom: -90px;
+  }
+}
 #hero .row {
-  padding-top: 190px;
+  padding-top: 150px;
 }
 #hero .row #hero1 {
   max-width: 696px;
@@ -4272,7 +4303,7 @@ html {
   background: #CE6256;
   border: 3px solid #8B0002;
   border-radius: 30px;
-  margin-top: 55px;
+  margin-top: 40px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -4291,7 +4322,7 @@ html {
   background: #8B0002;
 }
 #hero .row #hero2 {
-  max-width: 1800px;
+  max-width: 40%;
   position: absolute;
   width: 100%;
   right: 0px;
@@ -4849,17 +4880,14 @@ html {
   z-index: 0;
 }
 #competitionhero .container {
-  position: absolute;
   z-index: 1;
   padding-top: 173px;
 }
 #competitionhero .container img {
-  width: 95%;
-  margin-left: 0px;
+  width: 90%;
 }
 #competitionhero .container .title {
   padding-top: 35px;
-  padding-left: 10%;
   font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;
@@ -4872,7 +4900,6 @@ html {
 }
 #competitionhero .container .body {
   margin-top: 25px;
-  padding-left: 10%;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
@@ -7769,7 +7796,7 @@ html {
 #hidedetail .toggle-el .group {
   z-index: 0;
 }
-#hidedetail input[type=checkbox].hide-input:checked + .toggle-el {
+#hidedetail input[type=checkbox].hide-input:not(:checked) + .toggle-el {
   height: 0;
   opacity: 0;
   padding-top: 0;
@@ -7782,13 +7809,13 @@ html {
 }
 #hidedetail .headset1 {
   position: absolute;
-  left: 0;
+  left: 7%;
   bottom: 80px;
   z-index: -1;
 }
 #hidedetail .headset2 {
   position: absolute;
-  right: 0;
+  right: 7%;
   bottom: 80px;
   z-index: -1;
 }
