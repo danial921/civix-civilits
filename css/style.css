@@ -4616,13 +4616,72 @@ html {
   width: 380px;
   height: 354px;
   margin-right: 40px;
-  counter-increment: gallery-cell;
+  border: #fff solid 3px;
+  border-radius: 20px;
 }
 #flashfrom .img1 {
-  background: url("../assets/carousel/photo1.svg");
+  background: url("../assets/flashfrompast/1.JPG");
+  background-size: cover;
 }
-#flashfrom .imgx {
-  background: url("../assets/carousel/nonebg.svg");
+#flashfrom .img2 {
+  background: url("../assets/flashfrompast/2.JPG");
+  background-size: cover;
+}
+#flashfrom .img3 {
+  background: url("../assets/flashfrompast/3.JPG");
+  background-size: cover;
+}
+#flashfrom .img4 {
+  background: url("../assets/flashfrompast/4.JPG");
+  background-size: cover;
+}
+#flashfrom .img5 {
+  background: url("../assets/flashfrompast/5.JPG");
+  background-size: cover;
+}
+#flashfrom .img6 {
+  background: url("../assets/flashfrompast/6.JPG");
+  background-size: cover;
+}
+#flashfrom .img7 {
+  background: url("../assets/flashfrompast/7.JPG");
+  background-size: cover;
+}
+#flashfrom .img8 {
+  background: url("../assets/flashfrompast/8.JPG");
+  background-size: cover;
+}
+#flashfrom .img9 {
+  background: url("../assets/flashfrompast/9.JPG");
+  background-size: cover;
+}
+#flashfrom .img10 {
+  background: url("../assets/flashfrompast/10.JPG");
+  background-size: cover;
+}
+#flashfrom .img11 {
+  background: url("../assets/flashfrompast/11.JPG");
+  background-size: cover;
+}
+#flashfrom .img12 {
+  background: url("../assets/flashfrompast/12.JPG");
+  background-size: cover;
+}
+#flashfrom .img13 {
+  background: url("../assets/flashfrompast/13.JPG");
+  background-size: cover;
+}
+#flashfrom .img14 {
+  background: url("../assets/flashfrompast/14.JPG");
+  background-size: cover;
+}
+#flashfrom .img15 {
+  background: url("../assets/flashfrompast/15.JPG");
+  background-size: cover;
+}
+#flashfrom .img16 {
+  background: url("../assets/flashfrompast/16.JPG");
+  background-size: cover;
 }
 #flashfrom .gallery-cell:before {
   display: block;
