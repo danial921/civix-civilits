@@ -8070,4 +8070,14 @@ html {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+#counter_closing_closing img.buble3 {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
+#counter_closing_closing img.buble2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }/*# sourceMappingURL=style.css.map */
