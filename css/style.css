@@ -4766,11 +4766,11 @@ html {
 }
 #sponsorship .footer .decs {
   padding-top: 50px;
-  font-family: "Urbanist";
+  font-family: "Raleway";
   font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #000000;
@@ -7881,4 +7881,193 @@ html {
 #hidedetail .headset1.active,
 #hidedetail .headset2.active {
   display: none;
+}
+
+#counter_closing {
+  background: #E4EFE7;
+  padding-top: 150px;
+  min-height: 1000px;
+  padding-bottom: 300px;
+  position: relative;
+}
+#counter_closing img.hero {
+  margin-top: 120px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 448.28px;
+  width: 50%;
+}
+#counter_closing .headingtitle {
+  margin-left: 140px;
+}
+#counter_closing .headingtitle .text1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+#counter_closing .headingtitle .text2 {
+  margin-top: 15px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+#counter_closing .cd_timer {
+  margin: 200px auto 0 auto;
+  text-align: center;
+}
+#counter_closing .cd_timer .cd_container {
+  display: inline-block;
+  background-color: #000000;
+  padding: 14px 35px;
+  margin: 0 11px;
+  border-radius: 22px;
+}
+#counter_closing .cd_timer .cd_container .time {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 75px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#counter_closing .cd_timer .cd_container .time_text {
+  margin-top: 3px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #A5DEFF;
+}
+#counter_closing .text3 {
+  margin: 0 auto;
+  margin-top: 123px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-align: center;
+}
+#counter_closing .container {
+  position: relative;
+}
+#counter_closing .container img.topright {
+  position: absolute;
+  right: 0;
+}
+#counter_closing .container img.bottomleft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#counter_closing_closing {
+  background: #F0BCB7;
+  padding-top: 150px;
+  min-height: 1000px;
+  padding-bottom: 300px;
+  position: relative;
+}
+#counter_closing_closing img.hero {
+  margin-top: 120px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 448.28px;
+  width: 50%;
+}
+#counter_closing_closing .headingtitle .text1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 70px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+#counter_closing_closing .cd_timer {
+  margin: 112px auto 0 auto;
+  text-align: center;
+}
+#counter_closing_closing .cd_timer .cd_container {
+  display: inline-block;
+  background-color: #000000;
+  padding: 14px 35px;
+  margin: 0 11px;
+  border-radius: 22px;
+}
+#counter_closing_closing .cd_timer .cd_container .time {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 75px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#counter_closing_closing .cd_timer .cd_container .time_text {
+  margin-top: 3px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #A5DEFF;
+}
+#counter_closing_closing .text2 {
+  margin-top: 130px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  text-align: center;
+}
+#counter_closing_closing .text3 {
+  margin: 25px auto;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 59px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+#counter_closing_closing .container {
+  position: relative;
+}
+#counter_closing_closing .container img.topright {
+  position: absolute;
+  right: 0;
+}
+#counter_closing_closing .container img.bottomleft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */

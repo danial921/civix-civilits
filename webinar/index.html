@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webinar</title>
+    <title>merchandise</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="../css\flickity-docs.css">
     <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="../assets/civexico.svg">
+
+
 </head>
 
 <body id="body">
@@ -27,71 +28,41 @@
             <ul class="menu-items">
                 <li><a href="../">Home</a></li>
                 <li><a href="../competition">Competition</a></li>
-                <li><a href="../webinar"><strong>Webinar</strong></a></li>
-                <li><a href="../merchandise">Merchandise</a></li>
+                <li><a href="../webinar">Webinar</a></li>
+                <li><a href="../merchandise"><strong>Merchandise</strong></a></li>
                 <li><a href="../closing">Closing</a></li>
             </ul>
 
         </div>
     </nav>
-
-    <section id="webinarhero">
-        <div class="row border-0">
-            <div class="col-4 left border-0">
-                <div class="bg1" data-aos="fade-right"></div>
-            </div>
-            <div class="col-8 right border-0">
-                <div class="bg2">
-                </div>
-                <img class="hat" src="../assets/webinar/heat.svg" data-aos="zoom-in-right">
-                <img class="glass" src="../assets/webinar/glass.svg" data-aos="zoom-in-right">
-                <img class="meteran" src="../assets/webinar/meteran.svg" data-aos="zoom-in-right">
-
-                <img src="../assets/webinar/hero.svg" data-aos="zoom-in">
-                <div class="title" data-aos="fade-up">Civil Expo Webinar</div>
-                <div class="body" data-aos="fade-up">As the opening event of the entire series of Civil Expo ITS 2022
-                    events which present
-                    an international Webinar with the theme <strong>"IKN Nusantara Smart City Concept
-                        Analysis"</strong>.</div>
-                <a href="" class="btnregis" data-aos="zoom-in">Register</a>
-            </div>
-        </div>
-    </section>
-    <section id="breakline"></section>
-    <section id="speaker">
-        <img class="headset" src="../assets/webinar/headset.svg" data-aos="zoom-in">
-        <img class="scope" src="../assets/webinar/scope.svg" data-aos="zoom-in">
-        <img class="ex1" src="../assets/webinar/ex-1.svg" data-aos="zoom-in">
-        <img class="ex" src="../assets/webinar/ex.svg" data-aos="zoom-in">
-        <div class="title" data-aos="fade-in">Meet Our Speakers</div>
-        <div class="gallery js-flickity container" data-aos="fade-out" data-flickity-options='{ "wrapAround": true  }'>
-            <div class="gallery-cell img1"></div>
-            <div class="gallery-cell imgx"></div>
-            <div class="gallery-cell imgx"></div>
-            <div class="gallery-cell imgx"></div>
-            <div class="gallery-cell imgx"></div>
-        </div>
+    <section id="counter_closing">
+        <img class="hero" src="../assets/closingwebinar/hero.svg" data-aos="zoom-in">
         <div class="container">
-            <div class="information row" data-aos="zoom-in">
-                <img class="alien1" src="../assets/webinar/alienleft.svg">
-                <img class="alien2" src="../assets/webinar/alienright.svg">
-                <div class="col-4 date">
-                    <div class="heading">DATE :</div>
-                    <div class="content">October 15, 2022</div>
+            <img src="../assets/closingwebinar/topright.svg" class="topright" data-aos="fade-right">
+            <img src="../assets/closingwebinar/bottomleft.svg" class="bottomleft" data-aos="fade-left">
+            <div class="headingtitle" data-aos="fade-up">
+                <div class="text1" >Civil Expo</div>
+                <div class="text2">WEBINAR</div>
+            </div>
+            <div class="cd_timer" data-aos="fade-right">
+                <div class="cd_container">
+                    <div class="time day dd">99</div>
+                    <div class="time_text ddd">Days</div>
                 </div>
-                <div class="col-4 time">
-                    <div class="heading">TIME :</div>
-                    <div class="content">1 pm - End</div>
+                <div class="cd_container" data-aos="fade-up">
+                    <div class="time hour hh">50</div>
+                    <div class="time_text hhh">Hours</div>
                 </div>
-                <div class="col-4 location">
-                    <div class="heading">LOCATION :</div>
-                    <div class="content">Zoom & Youtube</div>
+                <div class="cd_container" data-aos="fade-up">
+                    <div class="time minute mm">30</div>
+                    <div class="time_text mmm">Minutes</div>
+                </div>
+                <div class="cd_container" data-aos="fade-left">
+                    <div class="time second ss">30</div>
+                    <div class="time_text sss">Seconds</div>
                 </div>
             </div>
-        </div>
-        <div class="cta">
-            <a class="registerbtn" href="" data-aos="fade-out">Register</a>
-            <a class="cpbtn" href="" data-aos="fade-out">Contact Person</a>
+            <div class="text3" data-aos="fade-up">LAUNCHING SOON</div>
         </div>
     </section>
     <section id="sponsorship">
@@ -146,6 +117,101 @@
         AOS.init({
             duration: 1200,
         })
+    </script>
+    <script>
+        const newYear = "8/29/2022";
+        const daysEl = document.querySelector('.day');
+        const hourEl = document.querySelector('.hour');
+        const minuteEl = document.querySelector('.minute');
+        const secondEl = document.querySelector('.second');
+
+        function timeCountDown() {
+            const nowDate = new Date();
+            const newYearDate = new Date(newYear);
+            const totalSeconds = (newYearDate - nowDate) / 1000;
+            console.log(newYearDate)
+            const days = Math.floor(totalSeconds / 3600 / 24);
+            const hours = Math.floor(totalSeconds / 3600) % 24;
+            const minutes = Math.floor(totalSeconds / 60) % 60;
+            const seconds = Math.floor(totalSeconds) % 60;
+
+            daysEl.innerHTML = formatTime(days);
+            hourEl.innerHTML = formatTime(hours);
+            minuteEl.innerHTML = formatTime(minutes);
+            secondEl.innerHTML = formatTime(seconds);
+        }
+
+        function formatTime(time) {
+            return time >= 10 ? time : `0${time}`;
+        }
+
+        timeCountDown()
+        setInterval(timeCountDown, 1000);
+    </script>
+    <script>
+        (function () {
+            "use strict";
+
+            // Vertical Slider object
+            const vertical_slider = {
+
+                // Slide class name
+                slider_class: ".slider",
+
+                // Show slide
+                show_slide: function (slide_id, context_item) {
+                    const slide_container = context_item.closest(this.slider_class).querySelector(".slides");
+                    if (slide_container) {
+                        const slides = slide_container.querySelectorAll(".slide");
+                        if (slides && slides[slide_id]) {
+
+                            // Scroll to active slide
+                            slide_container.scrollTo({
+                                top: slides[slide_id].offsetTop,
+                                behavior: "smooth"
+                            });
+
+
+                            // Set active context item
+                            const active_context_item = context_item.closest(".slide_navigation").querySelector(".active");
+                            if (active_context_item) {
+                                active_context_item.classList.remove("active");
+                            }
+
+                            context_item.classList.add("active");
+                        }
+                    }
+                },
+
+                // Initialize slide
+                init_slider: function (slider) {
+
+                    const navigation_items = slider.querySelectorAll(".slide_navigation a");
+
+                    if (navigation_items) {
+                        Object.keys(navigation_items).forEach(function (key) {
+                            navigation_items[key].onclick = function (e) {
+                                e.preventDefault();
+
+                                vertical_slider.show_slide(key, navigation_items[key]);
+                            };
+                        });
+                    }
+
+                },
+
+                // Initialize sliders
+                init: function () {
+
+                    // Iterate over each slider
+                    document.querySelectorAll(this.slider_class).forEach((slider) => this.init_slider(slider));
+
+                }
+            };
+
+            // Initialize sliders
+            vertical_slider.init();
+        }());
     </script>
 </body>
 
